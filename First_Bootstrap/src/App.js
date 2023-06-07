@@ -32,6 +32,10 @@ function App() {
   const handleOnSubmit = (e) => {
     e.preventDefault()
     setItems([inputs.path, ...items])
+    //kiürítjük az input mezőket
+    setInputs({ title: null, file: null, path: null })
+    // becsukjuk a képhozzáadó menüt
+    collapse(false)
   }
 
   useEffect(() => {
@@ -49,6 +53,7 @@ function App() {
         <button className="btn btn-success float-end" onClick={toggle}>{isCollapsed ? 'Close' : '+Add'}</button>
         <div className="clearfix mb-4"></div>
         <UploadForm
+          inputs={inputs} //kell propsnak a useMemo-hoz
           isVisible={isCollapsed}
           onChange={handleOnChange}
           onSubmit={handleOnSubmit}
