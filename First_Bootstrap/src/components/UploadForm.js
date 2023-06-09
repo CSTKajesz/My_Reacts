@@ -1,4 +1,5 @@
-import { useMemo } from "react"
+import { useMemo, useContext } from "react"
+import { Context } from "../context";
 
 const Preview = ({ path }) => {
   return (
@@ -14,18 +15,24 @@ const Preview = ({ path }) => {
   );
 };
 
-const UploadForm = ({ inputs, isVisible, onChange, onSubmit }) => {
+const UploadForm = () => {
+  const { dispatch, state } = useContext(Context)
+  const handleOnChange = (e) => dispatch({ type: 'setInputs', payload: { value: e } })
+  const handleOnSubmit = (e) => {
+    e.preventDefault()
+    dispatch({ type: 'setItem' })
+    dispatch({ type: "collapse", payload: { bool: false } })
+  }
   const isDisabled = useMemo(() => {
-    return !!Object.values(inputs).some(input => !input)
-  }, [inputs])
-
+    return !!Object.values(state.inputs).some(input => !input)
+  }, [state.inputs])
   return (
-    isVisible && <>
+    state.isCollapsed && <>
       <p className="display-6 text-center mb-3">Upload Stock Image</p>
       <div className="mb-5 d-flex align-items-center justify-content-center">
         {/* // a form nyitó tagjéhez kell az onSubmitot tenni */}
-        <form className="mb-2" style={{ textAlign: "left" }} onSubmit={onSubmit}>
-          <Preview {...inputs} />
+        <form className="mb-2" style={{ textAlign: "left" }} onSubmit={handleOnSubmit}>
+          <Preview {...state.inputs} />
           <div className="mb-3">
             <input
               type="text"
@@ -33,7 +40,7 @@ const UploadForm = ({ inputs, isVisible, onChange, onSubmit }) => {
               name="title"
               placeholder="title"
               aria-describedby="text"
-              onChange={onChange}
+              onChange={handleOnChange}
             />
           </div>
           <div className="mb-3">
@@ -41,7 +48,7 @@ const UploadForm = ({ inputs, isVisible, onChange, onSubmit }) => {
               type="file"
               className="form-control"
               name="file"
-              onChange={onChange}
+              onChange={handleOnChange}
             />
           </div>
           <button
