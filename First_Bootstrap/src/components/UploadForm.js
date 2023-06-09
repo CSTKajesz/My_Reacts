@@ -5,7 +5,7 @@ const Preview = ({ path }) => {
     path && <div
       className="rounded p-1 m-5"
       style={{
-        width: "30%",
+        width: "30vw",
         height: "300px",
         backgroundImage: `url(${path}`,
         backgroundSize: "cover",
