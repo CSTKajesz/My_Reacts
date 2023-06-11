@@ -13,6 +13,7 @@ const firebaseConfig = {
 };
 
 
+
 // Initialize Firebase
 const app = () => {
     if (!firebaseConfig || !firebaseConfig.apiKey) {
