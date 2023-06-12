@@ -3,14 +3,16 @@ import { initializeApp } from "firebase/app";
 /*
 To initialize firebase below, go yo  https://firebase.google.com/docs/web/setup?authuser=0&hl=en#add-sdks-initialize
 */
-const firebaseConfig = {
-    apiKey: "YOUR-API-KEY",
-    authDomain: "YOUR-API-KEY",
-    projectId: "YOUR-API-KEY",
-    storageBucket: "YOUR-API-KEY",
-    messagingSenderId: "YOUR-API-KEY",
-    appId: "YOUR-API-KEY"
-};
+// const firebaseConfig = {
+//     apiKey: "YOUR-API-KEY",
+//     authDomain: "YOUR-API-KEY",
+//     projectId: "YOUR-API-KEY",
+//     storageBucket: "YOUR-API-KEY",
+//     messagingSenderId: "YOUR-API-KEY",
+//     appId: "YOUR-API-KEY"
+// };
+
+
 
 
 
