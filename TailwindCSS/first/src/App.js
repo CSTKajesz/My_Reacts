@@ -1,8 +1,18 @@
 import './App.css'
+import Text from './challenges/FontsBackgrounds'
+import Buttons from './challenges/Buttons'
+import Flex from './challenges/DisplayMode'
+import Inputs from './challenges/InputComponents'
+import EmployeeCard from './challenges/EmployeeCard'
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline bg-red-200">
-      Hello world!
-    </h1>
+    <>
+      <Text />
+      <Buttons />
+      <Flex />
+      <Inputs />
+      <EmployeeCard />
+    </>
+
   )
 }
