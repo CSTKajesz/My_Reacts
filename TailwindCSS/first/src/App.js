@@ -1,18 +1,11 @@
 import './App.css'
-import Text from './challenges/FontsBackgrounds'
-import Buttons from './challenges/Buttons'
-import Flex from './challenges/DisplayMode'
-import Inputs from './challenges/InputComponents'
-import EmployeeCard from './challenges/EmployeeCard'
+import routes from "./routes"
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter(routes);
+
 export default function App() {
   return (
-    <>
-      <Text />
-      <Buttons />
-      <Flex />
-      <Inputs />
-      <EmployeeCard />
-    </>
-
+    <RouterProvider router={router} />
   )
 }
