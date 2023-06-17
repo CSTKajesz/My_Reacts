@@ -17,10 +17,13 @@ module.exports = {
         }
       },
       fontFamily: {
-        'poppins': ['Poppins', 'sans-serif']
+        raleway: ['Raleway', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  variants: {},
+  plugins: [
+    require('tailwindcss-font-inter'),
+  ],
 }
 
