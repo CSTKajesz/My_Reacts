@@ -6,7 +6,9 @@ const SharedLayout = () => {
     return (
         <>
             <Navbar />
-            <Outlet />
+            <div className='max-w-[900px] mt-[-96px] w-full h-screen mx-auto text-left flex flex-col justify-center'>
+                <Outlet />
+            </div>
         </>
     );
 };
