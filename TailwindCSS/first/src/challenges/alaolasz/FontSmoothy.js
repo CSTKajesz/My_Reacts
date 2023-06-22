@@ -1,4 +1,7 @@
-<ul class="container mx-auto divide-y divide-gray-400 divide-dotted" style="font-family: Raleway">
+const FontSmoothy = () => {
+  return (
+  <>
+  <ul class="container mx-auto divide-y divide-gray-400 divide-dotted" style="font-family: Raleway">
 
   <li class="flex items-center justify-between px-4 py-2">
     <div class="antialiased">
@@ -19,3 +22,7 @@
   </li>
 
 </ul>
+  </>
+  )
+  }
+  export default{FontSmoothy}
