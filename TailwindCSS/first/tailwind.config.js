@@ -18,6 +18,20 @@ module.exports = {
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
+        sourceSansPro: ['Source Sans Pro', 'sans-serif'],
+      },
+      //ha ezt így nem adod meg akkor nem használja a méreteket!!!
+      fontSize: {
+        xs: "0.75rem",
+        sm: "0.875rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "4rem",
       },
     },
   },

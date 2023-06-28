@@ -1,8 +1,19 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import FontDirectives from './typography/FontDirectives';
 import TextDirectives from './typography/TextDirectives';
+import { useState } from 'react';
 
 const Typography = () => {
+    const [active, setActive] = useState('font');
+
+    const showFontDirectives = () => {
+        setActive('font');
+    };
+
+    const showTextDirectives = () => {
+        setActive('text');
+    };
+
     return (
         <>
             <main className='h-screen relative flex flex-row mt-[125px]'>
@@ -12,8 +23,8 @@ const Typography = () => {
                             <div className="space-y-2">
                                 <h2 className="text-sm font-semibold text-indigo-300">Typography solutions</h2>
                                 <aside className="flex flex-col space-y-1">
-                                    <Link to="#fontdirectives" smooth className="hover:text-black">Font directives</Link>
-                                    <Link to="#textdirectives" className="hover:text-black">Text directives</Link>
+                                    <Link to="#fontdirectives" smooth className="hover:text-black" onClick={showFontDirectives}>Font directives</Link>
+                                    <Link to="#textdirectives" className="hover:text-black" onClick={showTextDirectives}>Text directives</Link>
                                     <Link to="#" className="hover:text-black">List styles</Link>
                                     <Link to="#" className="hover:text-black">Spacing Typography</Link>
                                 </aside>
@@ -22,10 +33,8 @@ const Typography = () => {
                     </div>
                 </div>
                 <div className='h-screen mt-[125px]'>
-                    <h3>Font Family</h3>
-                    <FontDirectives />
-                    <h2>Font Size</h2>
-                    <TextDirectives />
+                    {active === 'font' && <FontDirectives />}
+                    {active === 'text' && <TextDirectives />}
                 </div>
             </main>
         </>
