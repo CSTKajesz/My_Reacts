@@ -50,7 +50,7 @@ const ListStyles = () => {
 
             </ul>
 
-            <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#list-style-type'>
+            <Link to='https://raybo.org/slides_tailwind/notes/slides/02_03/index.html#list-style-type'>
                 <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
             </Link>
 
@@ -90,7 +90,7 @@ const ListStyles = () => {
 
             </ul>
 
-            <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#list-style-position'>
+            <Link to='https://raybo.org/slides_tailwind/notes/slides/02_03/index.html#list-style-position'>
                 <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
             </Link>
 

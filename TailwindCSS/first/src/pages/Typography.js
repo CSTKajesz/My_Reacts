@@ -3,6 +3,7 @@ import FontDirectives from './typography/FontDirectives';
 import TextDirectives from './typography/TextDirectives';
 import { useState } from 'react';
 import ListStyles from './typography/ListStyles';
+import Spacing from './typography/SpacingTypography';
 
 const Typography = () => {
     const [active, setActive] = useState('font');
@@ -19,9 +20,9 @@ const Typography = () => {
         setActive('list');
     };
 
-    // const showSpacing = () => {
-    //     setActive('spacing');
-    // };
+    const showSpacing = () => {
+        setActive('spacing');
+    };
 
     return (
         <>
@@ -35,7 +36,7 @@ const Typography = () => {
                                     <Link to="#fontdirectives" smooth className="hover:text-black" onClick={showFontDirectives}>Font directives</Link>
                                     <Link to="#textdirectives" className="hover:text-black" onClick={showTextDirectives}>Text directives</Link>
                                     <Link to="#" className="hover:text-black" onClick={showListStyles}>List styles</Link>
-                                    {/* <Link to="#" className="hover:text-black" onClick={showSpacing}>Spacing Typography</Link> */}
+                                    <Link to="#" className="hover:text-black" onClick={showSpacing}>Spacing Typography</Link>
                                 </aside>
                             </div>
                         </nav>
@@ -45,7 +46,7 @@ const Typography = () => {
                     {active === 'font' && <FontDirectives />}
                     {active === 'text' && <TextDirectives />}
                     {active === 'list' && <ListStyles />}
-                    {/* {active === 'spacing' && <Spacing />} */}
+                    {active === 'spacing' && <Spacing />}
                 </div>
             </main>
         </>
