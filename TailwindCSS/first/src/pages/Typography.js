@@ -8,20 +8,8 @@ import Spacing from './typography/SpacingTypography';
 const Typography = () => {
     const [active, setActive] = useState('font');
 
-    const showFontDirectives = () => {
-        setActive('font');
-    };
-
-    const showTextDirectives = () => {
-        setActive('text');
-    };
-
-    const showListStyles = () => {
-        setActive('list');
-    };
-
-    const showSpacing = () => {
-        setActive('spacing');
+    const handleMenuItemClick = (menuId) => {
+        setActive(menuId);
     };
 
     return (
@@ -33,10 +21,10 @@ const Typography = () => {
                             <div className="space-y-2">
                                 <h2 className="text-sm font-semibold text-indigo-300">Typography solutions</h2>
                                 <aside className="flex flex-col space-y-1">
-                                    <Link to="#fontdirectives" smooth className="hover:text-black" onClick={showFontDirectives}>Font directives</Link>
-                                    <Link to="#textdirectives" className="hover:text-black" onClick={showTextDirectives}>Text directives</Link>
-                                    <Link to="#" className="hover:text-black" onClick={showListStyles}>List styles</Link>
-                                    <Link to="#" className="hover:text-black" onClick={showSpacing}>Spacing Typography</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('font')}>Font directives</Link>
+                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('text')}>Text directives</Link>
+                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('list')}>List styles</Link>
+                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link>
                                 </aside>
                             </div>
                         </nav>

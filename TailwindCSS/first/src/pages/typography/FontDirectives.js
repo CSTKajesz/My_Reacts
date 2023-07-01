@@ -6,6 +6,7 @@ const FontDirectives = () => {
     return (
         <section id="fontdirectives">
             <div className="text-2xl border-t-8 border-b-2 mb-8">Font Family</div>
+            • font-sans font-serif font-mono
             <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                 <li className="flex items-center justify-between px-4 py-2">
                     <div>
@@ -38,6 +39,9 @@ const FontDirectives = () => {
 
 
             <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Font Size</div>
+            • text-SIZ
+            <br />
+            • SIZ (xs, sm, base, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, 8xl, 9xl)
             <ul className="container mx-auto pl-2 leading-none divide-y divide-gray-400 divide-dotted font-raleway">
                 <li className="flex items-center justify-between px-4 py-2">
                     <div>
@@ -115,6 +119,9 @@ const FontDirectives = () => {
             </Link>
 
             <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Font Weight</div>
+            • font-WGT
+            <br />
+            • WGT (thin, extralight, light, normal, medium, semibold, bold, extrabold, black)
             <ul className="container mx-auto leading-none divide-y divide-gray-400 divide-dotted font-raleway">
                 <li className="flex items-center justify-between px-4 py-2">
                     <div>
@@ -185,6 +192,7 @@ const FontDirectives = () => {
             </Link>
 
             <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Font Style</div>
+            • italic, not-italic
             <ul className="container mx-auto leading-none divide-y divide-gray-400 divide-dotted font-raleway">
                 <li className="flex items-center justify-between px-4 py-2">
                     <div>
@@ -213,6 +221,7 @@ const FontDirectives = () => {
             </Link>
 
             <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Font Variant Numeric</div>
+            • normal-nums, ordinal, slashed-zero, lining-nums, oldstyle-nums, proportional-nums, tabular-nums, diagonal-fractions, stacked-fractions
             <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                 <li className="flex items-center justify-between px-4 py-2">
                     <div>
