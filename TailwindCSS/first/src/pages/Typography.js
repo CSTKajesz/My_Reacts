@@ -2,6 +2,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import FontDirectives from './typography/FontDirectives';
 import TextDirectives from './typography/TextDirectives';
 import { useState } from 'react';
+import ListStyles from './typography/ListStyles';
 
 const Typography = () => {
     const [active, setActive] = useState('font');
@@ -14,6 +15,14 @@ const Typography = () => {
         setActive('text');
     };
 
+    const showListStyles = () => {
+        setActive('list');
+    };
+
+    // const showSpacing = () => {
+    //     setActive('spacing');
+    // };
+
     return (
         <>
             <main className='h-screen relative flex flex-row mt-[125px]'>
@@ -25,8 +34,8 @@ const Typography = () => {
                                 <aside className="flex flex-col space-y-1">
                                     <Link to="#fontdirectives" smooth className="hover:text-black" onClick={showFontDirectives}>Font directives</Link>
                                     <Link to="#textdirectives" className="hover:text-black" onClick={showTextDirectives}>Text directives</Link>
-                                    <Link to="#" className="hover:text-black">List styles</Link>
-                                    <Link to="#" className="hover:text-black">Spacing Typography</Link>
+                                    <Link to="#" className="hover:text-black" onClick={showListStyles}>List styles</Link>
+                                    {/* <Link to="#" className="hover:text-black" onClick={showSpacing}>Spacing Typography</Link> */}
                                 </aside>
                             </div>
                         </nav>
@@ -35,6 +44,8 @@ const Typography = () => {
                 <div className='h-screen mt-[125px]'>
                     {active === 'font' && <FontDirectives />}
                     {active === 'text' && <TextDirectives />}
+                    {active === 'list' && <ListStyles />}
+                    {/* {active === 'spacing' && <Spacing />} */}
                 </div>
             </main>
         </>
