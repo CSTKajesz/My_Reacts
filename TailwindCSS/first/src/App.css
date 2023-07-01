@@ -15,3 +15,9 @@
         -webkit-text-stroke: 4px black;
     }
 }
+
+@layer components {
+    .my-table-spacing {
+        border-spacing: theme("spacing.3");
+    }
+}
