@@ -22,9 +22,9 @@ const Typography = () => {
                                 <h2 className="text-sm font-semibold text-indigo-300">Typography solutions</h2>
                                 <aside className="flex flex-col space-y-1">
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('font')}>Font directives</Link>
-                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('text')}>Text directives</Link>
-                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('list')}>List styles</Link>
-                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('text')}>Text directives</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('list')}>List styles</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link>
                                 </aside>
                             </div>
                         </nav>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Borders from './object-properties/Borders';
 import Rings from './object-properties/Rings';
+import Divide from './object-properties/Divide';
 
 
 const ObjectProperties = () => {
@@ -21,8 +22,8 @@ const ObjectProperties = () => {
                                 <aside className="flex flex-col space-y-1">
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('border')}>Borders</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('ring')}>Rings</Link>
-                                    {/* <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('list')}>List styles</Link>
-                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link> */}
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('divide')}>Divide</Link>
+                                    {/* <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link> */}
                                 </aside>
                             </div>
                         </nav>
@@ -31,8 +32,8 @@ const ObjectProperties = () => {
                 <div className='h-screen mt-[125px]'>
                     {active === 'border' && <Borders />}
                     {active === 'ring' && <Rings />}
-                    {/* {active === 'list' && <ListStyles />}
-                    {active === 'spacing' && <Spacing />} */}
+                    {active === 'divide' && <Divide />}
+                    {/* {active === 'spacing' && <Spacing />} */}
                 </div>
             </main>
         </>
