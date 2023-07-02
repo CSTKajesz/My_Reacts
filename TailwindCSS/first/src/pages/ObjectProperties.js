@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Borders from './object-properties/Borders';
+import Rings from './object-properties/Rings';
 
 
 const ObjectProperties = () => {
@@ -19,8 +20,8 @@ const ObjectProperties = () => {
                                 <h2 className="text-sm font-semibold text-indigo-300">Object properties</h2>
                                 <aside className="flex flex-col space-y-1">
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('border')}>Borders</Link>
-                                    {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('text')}>Text directives</Link>
-                                    <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('list')}>List styles</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('ring')}>Rings</Link>
+                                    {/* <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('list')}>List styles</Link>
                                     <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link> */}
                                 </aside>
                             </div>
@@ -29,8 +30,8 @@ const ObjectProperties = () => {
                 </div>
                 <div className='h-screen mt-[125px]'>
                     {active === 'border' && <Borders />}
-                    {/* {active === 'text' && <TextDirectives />}
-                    {active === 'list' && <ListStyles />}
+                    {active === 'ring' && <Rings />}
+                    {/* {active === 'list' && <ListStyles />}
                     {active === 'spacing' && <Spacing />} */}
                 </div>
             </main>
