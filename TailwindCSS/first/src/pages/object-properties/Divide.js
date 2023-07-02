@@ -1,10 +1,8 @@
 import { HashLink as Link } from 'react-router-hash-link';
-// import ScrollToTop from '../../components/ScrollToTop'
-import { AiOutlineToTop } from 'react-icons/ai';
 import ScrollToTopButton from '../../components/ScrollToTopBuuton';
 
 
-const Borders = () => {
+const Divide = () => {
     return (
         <>
             <section>
@@ -318,4 +316,4 @@ const Borders = () => {
     )
 }
 
-export default Borders
+export default Divide

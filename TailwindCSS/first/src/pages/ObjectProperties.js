@@ -3,6 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Borders from './object-properties/Borders';
 import Rings from './object-properties/Rings';
 import Divide from './object-properties/Divide';
+import BoxShadow from './object-properties/BoxShadow';
 
 
 const ObjectProperties = () => {
@@ -23,7 +24,7 @@ const ObjectProperties = () => {
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('border')}>Borders</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('ring')}>Rings</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('divide')}>Divide</Link>
-                                    {/* <Link to="#" className="hover:text-black" onClick={() => handleMenuItemClick('spacing')}>Spacing Typography</Link> */}
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('shadow')}>Spacing Typography</Link>
                                 </aside>
                             </div>
                         </nav>
@@ -33,7 +34,7 @@ const ObjectProperties = () => {
                     {active === 'border' && <Borders />}
                     {active === 'ring' && <Rings />}
                     {active === 'divide' && <Divide />}
-                    {/* {active === 'spacing' && <Spacing />} */}
+                    {active === 'shadow' && <BoxShadow />}
                 </div>
             </main>
         </>
