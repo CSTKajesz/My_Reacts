@@ -402,6 +402,31 @@ const Backgrounds = () => {
                 <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-origin'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8" style={{ fontFamily: 'Raleway' }}>Box Decoration Break</div>
+                • decoration-slice, decoration-clone
+                <br />
+                TYP(padding, border, content)
+
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted font-ra">
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div class="antialiased text-center">
+                            <p class="decoration-slice inline bg-gradient-to-b from-yellow-400 to-red-500 leading-snug px-6 font-light text-4xl text-white">Bubbles is from a family of robots that originated from an experiment melding candy vending machines with robotics in the early 1980s.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">decoration-slice</div>
+                    </li>
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div class="antialiased text-center">
+                            <p class="decoration-clone inline bg-gradient-to-b from-yellow-400 to-red-500 leading-snug px-6 font-light text-4xl text-white">Bubbles is from a family of robots that originated from an experiment melding candy vending machines with robotics in the early 1980s.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">decoration-clone</div>
+                    </li>
+
+                </ul>
+
+                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#box-decoration-break'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
 
 
             </section >
