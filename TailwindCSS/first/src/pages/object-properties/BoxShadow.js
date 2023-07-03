@@ -47,7 +47,7 @@ const BoxShadow = () => {
 
 
                 <Link to='https://raybo.org/slides_tailwind/notes/slides/03_05/index.html#box-shadow'>
-                    <button classNameName='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
 

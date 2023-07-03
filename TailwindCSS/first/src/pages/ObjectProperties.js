@@ -4,6 +4,7 @@ import Borders from './object-properties/Borders';
 import Rings from './object-properties/Rings';
 import Divide from './object-properties/Divide';
 import BoxShadow from './object-properties/BoxShadow';
+import Backgrounds from './object-properties/Backgrounds';
 
 
 const ObjectProperties = () => {
@@ -24,7 +25,8 @@ const ObjectProperties = () => {
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('border')}>Borders</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('ring')}>Rings</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('divide')}>Divide</Link>
-                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('shadow')}>Spacing Typography</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('background')}>Backgrounds</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('shadow')}>Box Shadow</Link>
                                 </aside>
                             </div>
                         </nav>
@@ -34,6 +36,7 @@ const ObjectProperties = () => {
                     {active === 'border' && <Borders />}
                     {active === 'ring' && <Rings />}
                     {active === 'divide' && <Divide />}
+                    {active === 'background' && <Backgrounds />}
                     {active === 'shadow' && <BoxShadow />}
                 </div>
             </main>
