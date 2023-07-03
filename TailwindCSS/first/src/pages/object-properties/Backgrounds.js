@@ -277,21 +277,56 @@ const Backgrounds = () => {
                 TYP(auto, cover, contain)
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-auto bg-center bg-no-repeat h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-auto bg-center bg-no-repeat h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-auto</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-cover bg-center bg-no-repeat h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-cover bg-center bg-no-repeat h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-cover</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-contain bg-center bg-no-repeat h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-contain bg-center bg-no-repeat h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-contain</div>
                     </li>
                 </ul>
 
 
                 <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-size'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Background Repeat </div>
+                • bg(-TYP)
+                <br />
+                TYP(repeat, no-repeat, repeat-x, repeat-y, repeat-round, repeat-space)
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-no-repeat bg-auto bg-center h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-no-repeat</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-repeat-x bg-auto bg-center h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-repeat-x</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-repeat-y bg-auto bg-center h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-repeat-y</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-repeat bg-auto bg-center h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-repeat</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-repeat-round bg-auto bg-center h-72 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-repeat-round</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-repeat-space bg-auto bg-center h-96 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-repeat-space</div>
+                    </li>
+                </ul>
+
+
+                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-repeat'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -302,39 +337,39 @@ const Backgrounds = () => {
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-bottom bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-bottom bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-bottom</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-center bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-center bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-center</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-left bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-left bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-left</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-left-bottom bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-left-bottom bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-left-bottom</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-left-top bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-left-top bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-left-top</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-right bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-right bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-right</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-right-bottom bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-right-bottom bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-right-bottom</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-right-top bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-right-top bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-right-top</div>
                     </li>
                     <li className="flex items-center justify-between py-4">
-                        <div className="bg-top bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'http://pixelprowess.com/i/powship.svg' }}></div>
+                        <div className="bg-top bg-no-repeat bg-auto h-64 w-full bg-green-300 overflow-auto" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-top</div>
                     </li>
                 </ul>
@@ -342,6 +377,29 @@ const Backgrounds = () => {
 
 
                 <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-position'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Background Origin</div>
+                • bg-origin(-TYP)
+                <br />
+                TYP(padding, border, content)
+
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-origin-border border-dashed p-4 border-8 bg-cover bg-center bg-no-repeat w-72 h-72" style={{ backgroundImage: 'url(http://pixelprowess.com/i/swamp_sq.png)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-origin-border</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-origin-padding border-dashed p-4 border-8 bg-cover bg-center bg-no-repeat w-72 h-72" style={{ backgroundImage: 'url(http://pixelprowess.com/i/swamp_sq.png)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-origin-padding</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="bg-origin-content border-dashed p-4 border-8 bg-cover bg-center bg-no-repeat w-72 h-72" style={{ backgroundImage: 'url(http://pixelprowess.com/i/swamp_sq.png)' }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-origin-content</div>
+                    </li>
+                </ul>
+
+                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-origin'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
