@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import WidthAndHeights from './object-metrics/WidthAndHeight';
+import PaddingAndMargin from './object-metrics/PaddingAndMargin';
 
 
 const ObjectMetrics = () => {
@@ -20,7 +21,7 @@ const ObjectMetrics = () => {
                                 <h2 className="text-sm font-semibold text-indigo-300">Object properties</h2>
                                 <aside className="flex flex-col space-y-1">
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('width')}>Width and Height</Link>
-                                    {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('ring')}>Rings</Link> */}
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('padding')}>Padding and Margins</Link>
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('divide')}>Divide</Link> */}
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('background')}>Backgrounds</Link> */}
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('shadow')}>Box Shadow</Link> */}
@@ -31,7 +32,7 @@ const ObjectMetrics = () => {
                 </div>
                 <div className='h-screen mt-[125px]'>
                     {active === 'width' && <WidthAndHeights />}
-                    {/* {active === 'ring' && <Rings />} */}
+                    {active === 'padding' && <PaddingAndMargin />}
                     {/* {active === 'divide' && <Divide />} */}
                     {/* {active === 'background' && <Backgrounds />} */}
                     {/* {active === 'shadow' && <BoxShadow />} */}
