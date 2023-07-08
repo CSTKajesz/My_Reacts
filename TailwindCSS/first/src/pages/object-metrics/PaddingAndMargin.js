@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import ScrollToTopButton from "../../components/ScrollToTopBuuton";
 
-const WidthAndHeights = () => {
+const PaddingAndMargin = () => {
     const containerStyle = {
         fontFamily: "Raleway",
     };
@@ -163,4 +163,4 @@ const WidthAndHeights = () => {
     )
 }
 
-export default WidthAndHeights
+export default PaddingAndMargin
