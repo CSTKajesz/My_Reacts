@@ -5,7 +5,6 @@ import Rings from './object-properties/Rings';
 import Divide from './object-properties/Divide';
 import BoxShadow from './object-properties/BoxShadow';
 import Backgrounds from './object-properties/Backgrounds';
-import Colors from './object-properties/Colors';
 
 
 const ObjectProperties = () => {
@@ -28,7 +27,6 @@ const ObjectProperties = () => {
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('divide')}>Divide</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('background')}>Backgrounds</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('shadow')}>Box Shadow</Link>
-                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('colors')}>Tailwind Colors</Link>
                                 </aside>
                             </div>
                         </nav>
@@ -40,7 +38,6 @@ const ObjectProperties = () => {
                     {active === 'divide' && <Divide />}
                     {active === 'background' && <Backgrounds />}
                     {active === 'shadow' && <BoxShadow />}
-                    {active === 'colors' && <Colors />}
                 </div>
             </main>
         </>
