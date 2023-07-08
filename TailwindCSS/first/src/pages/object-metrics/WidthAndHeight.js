@@ -8,6 +8,12 @@ const WidthAndHeights = () => {
     return (
         <>
             <section>
+                <div className="text-2xl border-t-8 border-b-2 mb-8">Width</div>
+                • h-(SIZ)
+                <br />
+                SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,<br />1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 2/6, 3/6, 4/6, 5/6, 1/12, 2/12, 3/12, 4/12, 5/12, 6/12, 7/12, 8/12, 9/12, 10/12, 11/12)
+                <br /> (auto, px, full, screen, min, max)
+
                 <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li class="flex items-center justify-between px-4 py-2">
@@ -90,7 +96,38 @@ const WidthAndHeights = () => {
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#box-decoration-break'>
+                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#width'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Height</div>
+                • h-(SIZ)
+                <br />
+                SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,
+                <br />1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 2/6, 3/6, 4/6, 5/6, 1/12, 2/12, 3/12, 4/12, 5/12, 6/12, 7/12, 8/12, 9/12, 10/12, 11/12)
+                <br /> (auto, px, full, screen)
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div class="antialiased">
+                            <div>
+                                <div class="h-screen flex content-center">
+                                    <span class="h-96 w-full p-10 m-1 text-center inline-block bg-yellow-200 text-yellow-900 overflow-hidden">
+                                        <div class="font-light text-5xl align-middle mb-2">Rex</div>
+                                        <p class="text-md leading-tight">Rex is the Mayor of Binaryville and a well-loved personality in town. He rose to robotdom from a microprocessor plant on the south side of town, where many famous and influential robots before him were conceived.</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ml-5 text-right">
+                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">h-SIZ</div>
+                            <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">SIZ</b><br /> 0 0.5 1 1.5 2 2.5 3 3.5 4 5 6 7 8 9 10 11 12 14 16 20 24 28 32 36 40 44 48 52 56 60 64 72 80 96<br />1/2 1/3 2/3 1/4 2/4 3/4 1/5 2/5 3/5 4/5 1/6 2/6 3/6 4/6 5/6 1/12 2/12 3/12 4/12 5/12 6/12 7/12 8/12 9/12 10/12 11/12<br />auto px full screen min max
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#height'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 

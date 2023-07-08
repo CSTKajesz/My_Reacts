@@ -19,7 +19,7 @@ const ObjectMetrics = () => {
                             <div className="space-y-2">
                                 <h2 className="text-sm font-semibold text-indigo-300">Object properties</h2>
                                 <aside className="flex flex-col space-y-1">
-                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('widith')}>Width</Link>
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('width')}>Width</Link>
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('ring')}>Rings</Link> */}
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('divide')}>Divide</Link> */}
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('background')}>Backgrounds</Link> */}
