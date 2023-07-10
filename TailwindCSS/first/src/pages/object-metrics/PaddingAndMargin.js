@@ -14,6 +14,11 @@ const PaddingAndMargin = () => {
                 DIR (px, py, t, r, b, l)
                 <br />
                 SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96, px)
+                <p className="my-8 border-b-2" >
+                    Padding sets up the spacing inside an element's border section. You can see that there are some really rich options for padding.
+                    You can apply padding on four sides at once using just a p. You can change all vertical padding at once with py, horizontal padding with px or each one of the sides with one of the four letters t- for top r- for right b- for bottom and l- forleft.
+                    There are also a ton of size classes here. There are some pretty small classes at the beginning and some large ones towards the end. All sizes are in REMs, or root ems, which is set to 16 pixels except for a special size for a single pixel on all sides.
+                </p>
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
@@ -65,7 +70,7 @@ const PaddingAndMargin = () => {
                     </li>
 
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_02/index.html#padding'>
+                <Link to='https://tailwindcss.com/docs/padding'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -75,6 +80,11 @@ const PaddingAndMargin = () => {
                 DIR (px, py, t, r, b, l)
                 <br />
                 SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96, px)
+                <p className="my-8 border-b-2" >
+                    Margin sets up the spacing outside an element's border section. Like with padding, there are a ton of numbers you can use. However margin lets you specify negative margins so there are even more options.
+                    You can apply margin on four sides at once using just a p. You can change all vertical margins at once with py, horizontal margin with px or each one of the sides with one of the four letters t- for top r- for right b- for bottom and l- for left. I find it easy to remember by thinking of the word TROUBLE without the consonants
+                    There are also a ton of size classes here. There are some pretty small classes at the beginning and some large ones towards the end. All sizes are in REMs, or root ems, which is set to 16 pixels except for a special size for a single pixel on all sides.
+                </p>
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -127,11 +137,17 @@ const PaddingAndMargin = () => {
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_02/index.html#margin'>
+                <Link to='https://tailwindcss.com/docs/margin'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Box Sizing</div>
                 • box-border, box-content
+                <p className="my-8 border-b-2" >
+                    In CSS, the size of elements is often expressed in pixels, but is calculated by adding the border and padding to the element's size. So if you specify a 100px width, but then add 10 pixels of padding, then the size of the element is 120px, 100, plus ten on each side.
+                    space between
+                    You can change that by setting the box sizing parameter to border box. This makes the size include the border and padding inside the size specified. So a 100 pixel width will make adjust the size of the element to 80 pixels. That is a much more predictable sizing and is the default for Tailwind.
+                    However, if you want to change it to the traditional CSS sizing, you can use box-content class.
+                </p>
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between px-4 py-2">
@@ -153,7 +169,7 @@ const PaddingAndMargin = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_02/index.html#box-sizing'>
+                <Link to='https://tailwindcss.com/docs/box-sizing'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
