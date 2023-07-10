@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { Disclosure, } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { NavLink, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Disclosure } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const navigation = [
     { name: 'Typography', to: '/typography' },
@@ -10,19 +10,20 @@ const navigation = [
     { name: 'Layout', to: '/layout' },
     { name: 'Animation', to: '/animation' },
     { name: 'Other Options', to: '/other-options' },
-    { name: 'Just-inTime Mode', to: '/just-intime-mode' },
-]
+    { name: 'Just-in-Time Mode', to: '/just-intime-mode' },
+];
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(' ');
 }
 
-export default function Navbar({ originalUrl }) {
+export default function Navbar() {
     const navigate = useNavigate();
-    const [isShowing, setIsShowing] = useState(false)
+    const location = useLocation();
+    const [isShowing, setIsShowing] = useState(false);
 
     const handleBackButtonClick = () => {
-        navigate(originalUrl);
+        navigate(-1);
     };
 
     return (
@@ -32,7 +33,10 @@ export default function Navbar({ originalUrl }) {
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-indigo-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                                <Disclosure.Button
+                                    className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-indigo-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                    onClick={() => setIsShowing(!isShowing)}
+                                >
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
                                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -48,7 +52,10 @@ export default function Navbar({ originalUrl }) {
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt="Your Company"
                                     />
-                                    <NavLink to="/" className="hidden h-8 w-auto lg:block mr-3">
+                                    <NavLink
+                                        to="/"
+                                        className="hidden h-8 w-auto lg:block mr-3"
+                                    >
                                         <img
                                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                             alt="Your Company"
@@ -63,12 +70,15 @@ export default function Navbar({ originalUrl }) {
                                                     to={item.to}
                                                     activeClassName="bg-gray-300 text-white"
                                                     className="text-indigo-500 hover:text-black rounded-md px-3 py-2 text-sm font-medium"
-                                                    onClick={() => navigate(item.to)}
+                                                    onClick={() => {
+                                                        setIsShowing(false);
+                                                        navigate(item.to);
+                                                    }}
                                                     onMouseEnter={() => setIsShowing(true)}
                                                     onMouseLeave={() => setIsShowing(false)}
                                                 >
                                                     {item.name}
-                                                    {item.to === originalUrl && (
+                                                    {location.pathname === item.to && (
                                                         <button
                                                             type="button"
                                                             className="absolute top-0 right-0 h-full w-full text-gray-900 hover:text-white-900 rounded-md"
@@ -86,21 +96,18 @@ export default function Navbar({ originalUrl }) {
                     <Disclosure.Panel className="sm:hidden">
                         <div className="space-y-1 px-2 pb-3 pt-2">
                             {navigation.map((item) => (
-                                <Disclosure.Button
+                                <NavLink
                                     key={item.name}
-                                    as={NavLink}
                                     to={item.to}
-                                    onMouseEnter={() => setIsShowing(true)}
-                                    onMouseLeave={() => setIsShowing(false)}
+                                    activeClassName="bg-gray-900 text-white"
                                     className={classNames(
                                         'block rounded-md px-3 py-2 text-base font-medium',
-                                        item.to === originalUrl && 'bg-gray-900 text-white'
+                                        location.pathname === item.to && 'bg-gray-900 text-white'
                                     )}
-                                    activeClassName="bg-gray-900 text-white"
-                                    aria-current={item.to === originalUrl ? 'page' : undefined}
+                                    onClick={() => setIsShowing(false)}
                                 >
                                     {item.name}
-                                </Disclosure.Button>
+                                </NavLink>
                             ))}
                         </div>
                     </Disclosure.Panel>

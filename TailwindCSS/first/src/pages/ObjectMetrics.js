@@ -28,11 +28,15 @@ const ObjectMetrics = () => {
     }, [active, location, originalUrl]);
 
     const handleBackButtonClick = () => {
-        navigate(originalUrl);
+        if (originalUrl) {
+            navigate(originalUrl);
+        } else {
+            navigate(-1);
+        }
     };
 
     useEffect(() => {
-        const { pathname, hash } = location;
+        const { hash } = location;
         const activeMenu = hash.slice(1);
 
         if (activeMenu) {
@@ -44,30 +48,54 @@ const ObjectMetrics = () => {
 
     return (
         <>
-            <main className='h-screen relative flex flex-row mt-[125px]'>
-                <div className='max-w-[200px] mt-[125px] mr-[75px] h-screen text-left flex flex-col'>
+            <main className="h-screen relative flex flex-row mt-[125px]">
+                <div className="max-w-[200px] mt-[125px] mr-[75px] h-screen text-left flex flex-col">
                     <div className="w-full p-6 sm:w-60 bg-gray-200 text-indigo-500 sticky top-0">
                         <nav className="space-y-8 text-sm">
                             <div className="space-y-2">
                                 <h2 className="text-sm font-semibold text-indigo-300">Object metrics</h2>
                                 <aside className="flex flex-col space-y-1">
-                                    <Link to="#width" smooth className={`hover:text-black ${active === 'width' && 'font-bold'}`} onClick={() => handleMenuItemClick('width')}>Width and Height</Link>
-                                    <Link to="#padding" smooth className={`hover:text-black ${active === 'padding' && 'font-bold'}`} onClick={() => handleMenuItemClick('padding')}>Padding and Margins</Link>
-                                    <Link to="#display" smooth className={`hover:text-black ${active === 'display' && 'font-bold'}`} onClick={() => handleMenuItemClick('display')}>Display and Position</Link>
-                                    <Link to="#float" smooth className={`hover:text-black ${active === 'float' && 'font-bold'}`} onClick={() => handleMenuItemClick('float')}>Floating and Containment</Link>
+                                    <Link
+                                        to="#width"
+                                        className={`hover:text-black ${active === 'width' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('width')}
+                                    >
+                                        Width and Height
+                                    </Link>
+                                    <Link
+                                        to="#padding"
+                                        className={`hover:text-black ${active === 'padding' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('padding')}
+                                    >
+                                        Padding and Margins
+                                    </Link>
+                                    <Link
+                                        to="#display"
+                                        className={`hover:text-black ${active === 'display' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('display')}
+                                    >
+                                        Display and Position
+                                    </Link>
+                                    <Link
+                                        to="#float"
+                                        className={`hover:text-black ${active === 'float' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('float')}
+                                    >
+                                        Floating and Containment
+                                    </Link>
                                 </aside>
                             </div>
                         </nav>
                     </div>
                 </div>
-                <div className='h-screen mt-[125px]'>
+                <div className="h-screen mt-[125px]">
                     {active === 'width' && <WidthAndHeights />}
                     {active === 'padding' && <PaddingAndMargin />}
                     {active === 'display' && <DisplayAndPosition />}
                     {active === 'float' && <FloatingAndContainment />}
                 </div>
             </main>
-            {originalUrl && (
+            {!originalUrl && (
                 <button onClick={handleBackButtonClick}>Go Back</button>
             )}
         </>
@@ -75,4 +103,3 @@ const ObjectMetrics = () => {
 };
 
 export default ObjectMetrics;
-
