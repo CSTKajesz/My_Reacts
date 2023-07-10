@@ -81,7 +81,7 @@ const ObjectMetrics = () => {
                                         className={`hover:text-black ${active === 'other' && 'font-bold'}`}
                                         onClick={() => handleMenuItemClick('other')}
                                     >
-                                        Floating and Containment
+                                        Other Properties
                                     </Link>
                                 </aside>
                             </div>

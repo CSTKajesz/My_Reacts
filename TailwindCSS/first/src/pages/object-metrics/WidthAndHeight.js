@@ -13,6 +13,13 @@ const WidthAndHeights = () => {
                 <br />
                 SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,<br />1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 2/6, 3/6, 4/6, 5/6, 1/12, 2/12, 3/12, 4/12, 5/12, 6/12, 7/12, 8/12, 9/12, 10/12, 11/12)
                 <br /> (auto, px, full, screen, min, max)
+                <p className="my-8 border-b-2" >
+                    The width is probably one of the richest classes in Tailwind with tons of options. You can see that we have the traditional sizes from 1 to 96, but we also have fractional widths.
+                    There's a lot of other intersting parameters that you can use. So, for example auto will let the browser decide the width of the content, px will give us the usual 1 pixel width, full will give us a width of 100%, screen gives us 100% of the width of the viewport, which is normally the browser width.
+                    Finally, we have a couple of interesting values here. min gives us the width of the smallest word in our content, while max gives us the size of the largest word.
+                    In the example, you'll note that I left a few values out because they're difficult to visualize on the layout I've designed, but please play around with them.
+                </p>
+
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
@@ -96,7 +103,7 @@ const WidthAndHeights = () => {
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#width'>
+                <Link to='https://tailwindcss.com/docs/width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -106,6 +113,12 @@ const WidthAndHeights = () => {
                 SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,
                 <br />1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 2/6, 3/6, 4/6, 5/6, 1/12, 2/12, 3/12, 4/12, 5/12, 6/12, 7/12, 8/12, 9/12, 10/12, 11/12)
                 <br /> (auto, px, full, screen)
+                <p className="my-8 border-b-2" >
+                    Height is pretty similar to width with a lot of the same values, except that it doesn't have the min and max values because they don't make as much sense.
+                    Height is relative so in the example, you'll note that I'm just giving you a simple layout so you can play around with it.
+                    Notice that there is a container with a value of screen for the height. That makes the layout the size of the viewport. The height is usually relative to the size of a container and it won't show up, so without the container height, the other heights won't show up properly.
+                </p>
+
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -127,13 +140,19 @@ const WidthAndHeights = () => {
                     </li>
 
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#height'>
+                <Link to='https://tailwindcss.com/docs/height'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Min Width</div>
                 • min-w-(SIZ)
                 <br />
                 SIZ (0, full, min, max)
+                <p className="my-8 border-b-2" >
+                    The min width parameter lets you specify the minimum width an element should have. It has only four options.
+                    0 is meant to reset most elements, full is meant to make the minimum width the size of the container, min means that it will try to fit the smallest word possible and max will try to fit all of the words.
+                    In our example, notice that we've set the width of this element to 10, and if we didn't have these minimum utilities it would end up making our box too small.
+                </p>
+
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li >
@@ -154,7 +173,7 @@ const WidthAndHeights = () => {
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#min-width'>
+                <Link to='https://tailwindcss.com/docs/min-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Max Width</div>
@@ -162,6 +181,10 @@ const WidthAndHeights = () => {
                 <br />
                 SIZ (0, none, xs, sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, full, min, max, prose,
                 screen-sm, screen-md, screen-lg, screen-xl, screen-2xl)
+                <p className="my-8 border-b-2" >
+                    You'd think that the max-width parameters would be similar to the min-width paramaters, but there are lots more options here. In addition to the traditional sizes, you also have the option here of sizing to different viewport sizes.
+                    There's one REAL interesting option here called prose. It tries to set the width of the container so that the text fits nicely. you have to see it to believe so head on over to our example.
+                </p>
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li >
@@ -191,13 +214,17 @@ const WidthAndHeights = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#max-width'>
+                <Link to='https://tailwindcss.com/docs/max-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Min Height</div>
                 • min-h-(SIZ)
                 <br />
                 SIZ (0, full, screen)
+                <p className="my-8 border-b-2" >
+                    Let's talk about min height. It makes the object attempt to have a size that it doesn't go below.
+                    There's only a few options here, you can set that to 0, which is a reset. full means that the height of the element will fill the container, finally screen will try to make it fit the height of the viewport; which is usually the height of the browser.
+                </p>
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -221,7 +248,7 @@ const WidthAndHeights = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#min-height'>
+                <Link to='https://tailwindcss.com/docs/min-height'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Max Height</div>
@@ -229,6 +256,11 @@ const WidthAndHeights = () => {
                 <br />
                 SIZ (0, none, xs, sm, md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl, 7xl, full, min, max, prose,
                 screen-sm, screen-md, screen-lg, screen-xl, screen-2xl)
+                <p className="my-8 border-b-2" >
+                    With Max Height, the height of the element will try to be no bigger than the amount specified.
+                    max-height is one of those parameters that doesn't make any sense unless you see it in context. So in our example,
+                    it's important that I'm using a maximum height value together with the overflow classes.
+                </p>
                 <ul className="container mx-auto">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -268,7 +300,7 @@ const WidthAndHeights = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_01/index.html#max-height'>
+                <Link to='https://tailwindcss.com/docs/max-height'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
