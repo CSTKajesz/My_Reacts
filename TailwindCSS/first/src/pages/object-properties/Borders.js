@@ -12,6 +12,11 @@ const Borders = () => {
                 SID (t, r, b, l)
                 <br />
                 AMT (0, 2, 4, 8)
+                <p className="my-8 border-b-2" >
+                    You can specify the width of a border in one of four directions. Top, Right Bottom and Left and then you can use a size. It feels sort of odd that there are only four options for size.
+                    By the way, if you just say border, then it creates a one pixel size, so you can say border-l for a one pixel border on the left side.
+                </p>
+
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -30,7 +35,7 @@ const Borders = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_01/index.html#border-width'>
+                <Link to='https://tailwindcss.com/docs/border-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -38,7 +43,10 @@ const Borders = () => {
                 • border-opacity-AMT
                 <br />
                 AMT (0, 5, 10, 20 25, 30, 40, 50, 60, 70, 75, 80, 90, 95, 100)
-
+                <p className="my-8 border-b-2" >
+                    You can modify the border opacity with one of these values. Notice that there are more at the beginning and at the end of this scale, but otherwise they increment by 10 units.
+                    The nice thing about this way of setting borders is that you don't have to create an extra element to make the text opacity different than the border. Tailwind uses a custom variable to take care of this.
+                </p>
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
@@ -68,12 +76,17 @@ const Borders = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_01/index.html#border-opacity'>
+                <Link to='https://tailwindcss.com/docs/border-opacity'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Border Color</div>
                 • border-COL-STR
+
+                <p className="my-8 border-b-2" >
+                    The border colors just as you'd expect are trasnparent, black white and current...which sets the color to whatever the current color is set to.
+                    Plus the traditional gray, red, yellow, etc. and the strengths go from 100 to 900.
+                </p>
                 <ul className="container mx-auto" >
                     <li className="flex items-center justify-between px-4 py-2">
                         <div>
@@ -96,7 +109,7 @@ const Borders = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_01/index.html#border-color'>
+                <Link to='https://tailwindcss.com/docs/border-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -106,6 +119,13 @@ const Borders = () => {
                 COL(t, tl, r, tr, b, br, l, bl)
                 <br />
                 AMT (none, full, sm, md, lg, xl, 2xl, 3xl)
+                <p className="my-8 border-b-2" >
+                    Border radius is one of those interesting classes in that the class isn't named like it's CSS counterpart. It's called rounded instead.
+                    You can also specify not just the sides, but also he corners, so you use the top right bottom left, but also a combination so you can modify each corner.
+                    The sizes are pretty standard and are all based on REMs, which is the root ems that browsers typically define as 16 pixels.
+                    You can also just use the rounded keyword, in which case it will use a .15 rem size. You can see the sizes in action in the example.
+                    Although the 3xl looks pretty large, the full size is set to an infinite amount, which practically is 9999 pixels.
+                </p>
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -129,7 +149,7 @@ const Borders = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_01/index.html#border-radius'>
+                <Link to='https://tailwindcss.com/docs/border-radius'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -137,6 +157,9 @@ const Borders = () => {
                 • border-(STL)
                 <br />
                 STL(none, solid, dashed, dotted, double)
+                <p className="my-8 border-b-2" >
+                    There's a few border styles available. Interstingly enough the double style doesn't work well unless the border is set to 4 or 8 pixels.
+                </p>
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
@@ -158,7 +181,7 @@ const Borders = () => {
 
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_01/index.html#border-style'>
+                <Link to='https://tailwindcss.com/docs/border-style'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
