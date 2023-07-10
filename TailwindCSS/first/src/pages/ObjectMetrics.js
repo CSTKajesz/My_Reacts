@@ -28,14 +28,6 @@ const ObjectMetrics = () => {
         window.history.replaceState(null, null, url);
     }, [active, location, originalUrl]);
 
-    const handleBackButtonClick = () => {
-        if (originalUrl) {
-            navigate(originalUrl);
-        } else {
-            navigate(-1);
-        }
-    };
-
     useEffect(() => {
         const { hash } = location;
         const activeMenu = hash.slice(1);
@@ -104,9 +96,6 @@ const ObjectMetrics = () => {
                     {active === 'other' && <OtherProperties />}
                 </div>
             </main>
-            {!originalUrl && (
-                <button onClick={handleBackButtonClick}>Go Back</button>
-            )}
         </>
     );
 };

@@ -77,7 +77,7 @@ export default function Navbar() {
                                                     }}
                                                     onMouseEnter={() => setIsShowing(true)}
                                                     onMouseLeave={() => setIsShowing(false)}
-                                                    style={{ borderBottom: active === item.to ? '2px solid indigo' : 'none' }}
+                                                    style={{ borderBottom: active === item.to ? '2px solid rgba(63, 99, 255, 0.2)' : 'none' }}
                                                 >
                                                     {item.name}
                                                     {location.pathname === item.to && (

@@ -20,40 +20,40 @@ const FloatingAndContainment = () => {
                 • float-(DIR)
                 <br />
                 • none, left, right
-                <p className="my-8 border-b-2" >Float lets you control how an image wraps onto text. There are three classes. None, which is</p>
+                <p className="my-8 border-b-2" >Float lets you control how an image wraps onto text. There are three classNamees. None, which is</p>
 
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted" >
-                    <li class="flex items-center justify-between px-4 py-2">
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted" >
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-none mr-2 w-32 h-32" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
-                            <p class="mb-2">Obcaecati consequuntur ullam beatae dolor omnis repellat, illo incidunt dolores possimus cumque aut a maxime necessitatibus, exercitationem expedita dolorem. Sed, impedit? Sint rerum quia tenetur dolore. Dolorem cupiditate perferendis consectetur.</p>
-                            <p class="mb-2">Maxime a molestiae ut. Repellat voluptatem, laboriosam accusantium minus, expedita eligendi illo sint fuga et enim possimus voluptatibus! Sint, quae tenetur perferendis cupiditate nemo cum dignissimos repellat impedit blanditiis distinctio.</p>
+                            <img className="float-none mr-2 w-32 h-32" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <p className="mb-2">Obcaecati consequuntur ullam beatae dolor omnis repellat, illo incidunt dolores possimus cumque aut a maxime necessitatibus, exercitationem expedita dolorem. Sed, impedit? Sint rerum quia tenetur dolore. Dolorem cupiditate perferendis consectetur.</p>
+                            <p className="mb-2">Maxime a molestiae ut. Repellat voluptatem, laboriosam accusantium minus, expedita eligendi illo sint fuga et enim possimus voluptatibus! Sint, quae tenetur perferendis cupiditate nemo cum dignissimos repellat impedit blanditiis distinctio.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">float-none</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">float-none</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-left mr-2 w-32 h-32" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
-                            <p class="mb-2">Obcaecati consequuntur ullam beatae dolor omnis repellat, illo incidunt dolores possimus cumque aut a maxime necessitatibus, exercitationem expedita dolorem. Sed, impedit? Sint rerum quia tenetur dolore. Dolorem cupiditate perferendis consectetur.</p>
-                            <p class="mb-2">Maxime a molestiae ut. Repellat voluptatem, laboriosam accusantium minus, expedita eligendi illo sint fuga et enim possimus voluptatibus! Sint, quae tenetur perferendis cupiditate nemo cum dignissimos repellat impedit blanditiis distinctio.</p>
+                            <img className="float-left mr-2 w-32 h-32" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <p className="mb-2">Obcaecati consequuntur ullam beatae dolor omnis repellat, illo incidunt dolores possimus cumque aut a maxime necessitatibus, exercitationem expedita dolorem. Sed, impedit? Sint rerum quia tenetur dolore. Dolorem cupiditate perferendis consectetur.</p>
+                            <p className="mb-2">Maxime a molestiae ut. Repellat voluptatem, laboriosam accusantium minus, expedita eligendi illo sint fuga et enim possimus voluptatibus! Sint, quae tenetur perferendis cupiditate nemo cum dignissimos repellat impedit blanditiis distinctio.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">float-left</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">float-left</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-right mr-2 w-32 h-32" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
-                            <p class="mb-2">Obcaecati consequuntur ullam beatae dolor omnis repellat, illo incidunt dolores possimus cumque aut a maxime necessitatibus, exercitationem expedita dolorem. Sed, impedit? Sint rerum quia tenetur dolore. Dolorem cupiditate perferendis consectetur.</p>
-                            <p class="mb-2">Maxime a molestiae ut. Repellat voluptatem, laboriosam accusantium minus, expedita eligendi illo sint fuga et enim possimus voluptatibus! Sint, quae tenetur perferendis cupiditate nemo cum dignissimos repellat impedit blanditiis distinctio.</p>
+                            <img className="float-right mr-2 w-32 h-32" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <p className="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <p className="mb-2">Obcaecati consequuntur ullam beatae dolor omnis repellat, illo incidunt dolores possimus cumque aut a maxime necessitatibus, exercitationem expedita dolorem. Sed, impedit? Sint rerum quia tenetur dolore. Dolorem cupiditate perferendis consectetur.</p>
+                            <p className="mb-2">Maxime a molestiae ut. Repellat voluptatem, laboriosam accusantium minus, expedita eligendi illo sint fuga et enim possimus voluptatibus! Sint, quae tenetur perferendis cupiditate nemo cum dignissimos repellat impedit blanditiis distinctio.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">float-right</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">float-right</div>
                         </div>
                     </li>
                 </ul>
@@ -73,45 +73,45 @@ const FloatingAndContainment = () => {
                     In the example you can see two images, both floated around some text.
 
                     In the clear-left example, you can see that the text unfloats or is cleared underneath the image on the left. With clear-right the text clears on the image to the right. With clear-both it's clearing the right image, but that's because it's the last thing with a float.</p>
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center justify-between px-4 py-2">
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <img class="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
-                            <p class="clear-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <img className="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <img className="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
+                            <p className="clear-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-none</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-none</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <img class="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
-                            <p class="clear-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <img className="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <img className="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
+                            <p className="clear-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-left</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-left</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <img class="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
-                            <p class="clear-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <img className="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <img className="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
+                            <p className="clear-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-right</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-right</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <img class="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
-                            <img class="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
-                            <p class="clear-both">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
+                            <img className="float-left w-16 h-16" src="http://pixelprowess.com/i/powship.svg" alt="POW Logo" />
+                            <img className="float-right w-32 h-32" src="http://pixelprowess.com/i/ship-red.svg" alt="POW Logo" />
+                            <p className="clear-both">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, numquam ad? In deleniti cum doloribus repellat vero nesciunt accusamus at recusandae praesentium soluta! Magni cumque vitae iusto, est exercitationem dolore.</p>
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-both</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">clear-both</div>
                         </div>
                     </li>
                 </ul>
@@ -179,79 +179,79 @@ const FloatingAndContainment = () => {
 
                 <p className="my-8 border-b-2">Object position controls the position of an item within it's container. It makes sense, but requires some setup.
                     In the example, you'll notice that I've set up a logo with the different directions.
-                    However, you might miss that in order to get this to work, you have to set up the object-none class as well in the element, otherwise, the default behavior is for the element to fill the container.
-                    Also, I had to give the container a class of full, otherwise, you wouldn't be able to fill the container.</p>
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-left-top object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                    However, you might miss that in order to get this to work, you have to set up the object-none className as well in the element, otherwise, the default behavior is for the element to fill the container.
+                    Also, I had to give the container a className of full, otherwise, you wouldn't be able to fill the container.</p>
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-left-top object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-left-top</div>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-top object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                        </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-top</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-left-top</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-right-top object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-top object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-right-top</div>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-left object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                        </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-left</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-top</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-center object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-right-top object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-center</div>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-right object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                        </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-right</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-right-top</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-left-bottom object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-left object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-left-bottom</div>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-bottom object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                        </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-bottom</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-left</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="object-right-bottom object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-center object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-right-bottom</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-center</div>
+                        </div>
+                    </li>
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-right object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                        </div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-right</div>
+                        </div>
+                    </li>
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-left-bottom object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                        </div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-left-bottom</div>
+                        </div>
+                    </li>
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-bottom object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                        </div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-bottom</div>
+                        </div>
+                    </li>
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="object-right-bottom object-none h-36 w-full bg-purple-800" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                        </div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">object-right-bottom</div>
                         </div>
                     </li>
                 </ul>
@@ -268,94 +268,94 @@ const FloatingAndContainment = () => {
                 TYP (auto, hidden, visible, scroll)
 
                 <p className="my-8 border-b-2">Overflow controls what happens once an element gets too big to hold it's container.
-                    You can use the overflow class and then optionally add a direction, which is x or y. This will force the overflow to happen only on a specific direction.
+                    You can use the overflow className and then optionally add a direction, which is x or y. This will force the overflow to happen only on a specific direction.
                     Then you can add a type, which is the value of the parameters. That can be auto, which is the default, where it automatically tries to calculate what you need, or hidden, where it hides whatever the overflow is, visible, where it shows the content ignoring the container, scroll, where it gives you scrollbars.
                     If you take a look at the example, you can see that I've had to adjust a few of the elements being displayed depending on what I was trying to show. The yellow is the background color for the container.
                 </p>
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-auto h-20 w-5/6 bg-yellow-200 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-auto h-20 w-5/6 bg-yellow-200 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-auto</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-auto</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-hidden h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-hidden h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-hidden</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-hidden</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2" style={{ height: '600px' }}>
+                    <li className="flex items-center justify-between px-4 py-2" style={{ height: '600px' }}>
                         <div>
-                            <p class="overflow-visible h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living.</p>
+                            <p className="overflow-visible h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-visible</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-visible</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-scroll</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-scroll</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-x-auto w-5/6 bg-yellow-200 text-md leading-tight whitespace-nowrap " style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-x-auto w-5/6 bg-yellow-200 text-md leading-tight whitespace-nowrap " style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-auto</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-auto</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-y-auto h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-y-auto h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-auto</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-auto</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-x-hidden bg-yellow-200 text-md leading-tight whitespace-nowrap" style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-x-hidden bg-yellow-200 text-md leading-tight whitespace-nowrap" style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-hidden</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-hidden</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-y-hidden h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-y-hidden h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-hidden</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-hidden</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-x-visible  w-5/6 bg-yellow-200 text-md leading-tight whitespace-nowrap" style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-x-visible  w-5/6 bg-yellow-200 text-md leading-tight whitespace-nowrap" style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-visible</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-visible</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="overflow-visible" style={{ height: '600px' }}>
-                            <p class="overflow-y-visible h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="overflow-visible" style={{ height: '600px' }}>
+                            <p className="overflow-y-visible h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-visible</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-visible</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-x-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-x-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-scroll</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-scroll</div>
                     </li>
 
-                    <li class="flex items-center justify-between px-4 py-2">
+                    <li className="flex items-center justify-between px-4 py-2">
                         <div>
-                            <p class="overflow-y-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                            <p className="overflow-y-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
                         </div>
-                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-scroll</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-scroll</div>
                     </li>
                 </ul>
 
