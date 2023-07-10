@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import ScrollToTopButton from "../../components/ScrollToTopBuuton"
+import ScrollToTopButton from "../../components/ScrollToTopButton"
 
 const TextDirectives = () => {
 

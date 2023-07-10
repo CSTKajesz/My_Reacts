@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom"
-import ScrollToTopButton from "../../components/ScrollToTopBuuton";
+import ScrollToTopButton from "../../components/ScrollToTopButton";
+import { useEffect } from "react";
 
 const FloatingAndContainment = () => {
     const containerStyle = {
         fontFamily: "Raleway",
     };
+    useEffect(() => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const scrollPosition = urlParams.get('scrollPosition');
+        if (scrollPosition) {
+            window.scrollTo(0, parseInt(scrollPosition));
+        }
+    }, [window.location.search]);
     return (
         <>
             <section>
@@ -250,6 +258,109 @@ const FloatingAndContainment = () => {
 
 
                 <Link to='https://tailwindcss.com/docs/object-position'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Overflow</div>
+                • overflow(-DIR)(-TYP)
+                <br />
+                DIR (x, y)
+                <br />
+                TYP (auto, hidden, visible, scroll)
+
+                <p className="my-8 border-b-2">Overflow controls what happens once an element gets too big to hold it's container.
+                    You can use the overflow class and then optionally add a direction, which is x or y. This will force the overflow to happen only on a specific direction.
+                    Then you can add a type, which is the value of the parameters. That can be auto, which is the default, where it automatically tries to calculate what you need, or hidden, where it hides whatever the overflow is, visible, where it shows the content ignoring the container, scroll, where it gives you scrollbars.
+                    If you take a look at the example, you can see that I've had to adjust a few of the elements being displayed depending on what I was trying to show. The yellow is the background color for the container.
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-auto h-20 w-5/6 bg-yellow-200 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-auto</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-hidden h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-hidden</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2" style={{ height: '600px' }}>
+                        <div>
+                            <p class="overflow-visible h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-visible</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-scroll</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-x-auto w-5/6 bg-yellow-200 text-md leading-tight whitespace-nowrap " style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-auto</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-y-auto h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-auto</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-x-hidden bg-yellow-200 text-md leading-tight whitespace-nowrap" style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-hidden</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-y-hidden h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-hidden</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-x-visible  w-5/6 bg-yellow-200 text-md leading-tight whitespace-nowrap" style={{ maxWidth: '450px' }}>Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-visible</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div class="overflow-visible" style={{ height: '600px' }}>
+                            <p class="overflow-y-visible h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-visible</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-x-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-x-scroll</div>
+                    </li>
+
+                    <li class="flex items-center justify-between px-4 py-2">
+                        <div>
+                            <p class="overflow-y-scroll h-20 w-5/6 bg-yellow-200 text-md leading-tight">Fred is inquisitive and creative, and always conjuring up ways to improve Binaryville and the lives of its inhabitants. He's been at the forefront of many inventions, but has a special affinity for improving the world through alternative energy and green-living. Fred's engineering collaborations with the City of Binaryville have helped the city reduce its energy consumption year over year, and he's twice been awarded the highly coveted Binaryville Medallion of Honor.</p>
+                        </div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">overflow-y-scroll</div>
+                    </li>
+                </ul>
+
+
+                <Link to='https://tailwindcss.com/docs/overflow'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 

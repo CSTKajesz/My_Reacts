@@ -1,9 +1,7 @@
-import { Fragment, useState } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import { NavLink } from 'react-router-dom'
-import Dropdown from './Dropdown'
-import { FaAngleDown } from 'react-icons/fa';
+import { useState } from 'react'
+import { Disclosure, } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const navigation = [
     { name: 'Typography', to: '/typography' },
@@ -19,17 +17,13 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Navbar() {
-    const [dropdownStates, setDropdownStates] = useState({});
-    const [isClicked, setIsClicked] = useState(false);
+export default function Navbar({ originalUrl }) {
+    const navigate = useNavigate();
+    const [isShowing, setIsShowing] = useState(false)
 
-    const toggleDropdown = (name) => {
-        setDropdownStates((prevState) => ({
-            ...prevState,
-            [name]: !prevState[name],
-        }));
+    const handleBackButtonClick = () => {
+        navigate(originalUrl);
     };
-
 
     return (
         <Disclosure as="nav" className="bg-gray-100">
@@ -38,7 +32,6 @@ export default function Navbar() {
                     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
                             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                                {/* Mobile menu button*/}
                                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-indigo-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                                     <span className="sr-only">Open main menu</span>
                                     {open ? (
@@ -51,14 +44,12 @@ export default function Navbar() {
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                                 <div className="flex flex-shrink-0 items-center">
                                     <img
-                                        className="block h-8 w-auto lg:hidden"
+                                        className="block h-8 w-auto"
                                         src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                         alt="Your Company"
                                     />
-                                    <NavLink
-                                        to='/'>
+                                    <NavLink to="/" className="hidden h-8 w-auto lg:block mr-3">
                                         <img
-                                            className="hidden h-8 w-auto lg:block mr-3"
                                             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                                             alt="Your Company"
                                         />
@@ -72,21 +63,23 @@ export default function Navbar() {
                                                     to={item.to}
                                                     activeClassName="bg-gray-300 text-white"
                                                     className="text-indigo-500 hover:text-black rounded-md px-3 py-2 text-sm font-medium"
-
+                                                    onClick={() => navigate(item.to)}
+                                                    onMouseEnter={() => setIsShowing(true)}
+                                                    onMouseLeave={() => setIsShowing(false)}
                                                 >
                                                     {item.name}
-                                                    <button
-                                                        type="button"
-                                                        className="absolute top-0 right-0 h-full w-full text-gray-900 hover:text-white-900 rounded-md"
-                                                    >
-                                                    </button>
+                                                    {item.to === originalUrl && (
+                                                        <button
+                                                            type="button"
+                                                            className="absolute top-0 right-0 h-full w-full text-gray-900 hover:text-white-900 rounded-md"
+                                                        ></button>
+                                                    )}
                                                 </NavLink>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -95,13 +88,16 @@ export default function Navbar() {
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
-                                    as="a"
-                                    href={item.href}
+                                    as={NavLink}
+                                    to={item.to}
+                                    onMouseEnter={() => setIsShowing(true)}
+                                    onMouseLeave={() => setIsShowing(false)}
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-indigo-500 hover:text-black',
-                                        'block rounded-md px-3 py-2 text-base font-medium'
+                                        'block rounded-md px-3 py-2 text-base font-medium',
+                                        item.to === originalUrl && 'bg-gray-900 text-white'
                                     )}
-                                    aria-current={item.current ? 'page' : undefined}
+                                    activeClassName="bg-gray-900 text-white"
+                                    aria-current={item.to === originalUrl ? 'page' : undefined}
                                 >
                                     {item.name}
                                 </Disclosure.Button>
@@ -111,5 +107,5 @@ export default function Navbar() {
                 </>
             )}
         </Disclosure>
-    )
+    );
 }

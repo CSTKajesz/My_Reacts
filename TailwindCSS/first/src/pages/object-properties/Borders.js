@@ -1,5 +1,5 @@
 import { HashLink as Link } from 'react-router-hash-link';
-import ScrollToTopButton from '../../components/ScrollToTopBuuton';
+import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 
 const Borders = () => {
