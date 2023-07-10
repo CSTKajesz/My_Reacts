@@ -4,6 +4,7 @@ import WidthAndHeights from './object-metrics/WidthAndHeight';
 import PaddingAndMargin from './object-metrics/PaddingAndMargin';
 import DisplayAndPosition from './object-metrics/DisplayAndPosition';
 import FloatingAndContainment from './object-metrics/FloatingAndContainment';
+import OtherProperties from './object-metrics/OtherProperties';
 
 const ObjectMetrics = () => {
     const [active, setActive] = useState('width');
@@ -83,6 +84,13 @@ const ObjectMetrics = () => {
                                     >
                                         Floating and Containment
                                     </Link>
+                                    <Link
+                                        to="#other"
+                                        className={`hover:text-black ${active === 'other' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('other')}
+                                    >
+                                        Floating and Containment
+                                    </Link>
                                 </aside>
                             </div>
                         </nav>
@@ -93,6 +101,7 @@ const ObjectMetrics = () => {
                     {active === 'padding' && <PaddingAndMargin />}
                     {active === 'display' && <DisplayAndPosition />}
                     {active === 'float' && <FloatingAndContainment />}
+                    {active === 'other' && <OtherProperties />}
                 </div>
             </main>
             {!originalUrl && (
