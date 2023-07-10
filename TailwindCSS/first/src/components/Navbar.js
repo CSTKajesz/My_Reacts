@@ -21,6 +21,7 @@ export default function Navbar() {
     const navigate = useNavigate();
     const location = useLocation();
     const [isShowing, setIsShowing] = useState(false);
+    const active = location.pathname;
 
     const handleBackButtonClick = () => {
         navigate(-1);
@@ -76,6 +77,7 @@ export default function Navbar() {
                                                     }}
                                                     onMouseEnter={() => setIsShowing(true)}
                                                     onMouseLeave={() => setIsShowing(false)}
+                                                    style={{ borderBottom: active === item.to ? '2px solid indigo' : 'none' }}
                                                 >
                                                     {item.name}
                                                     {location.pathname === item.to && (
