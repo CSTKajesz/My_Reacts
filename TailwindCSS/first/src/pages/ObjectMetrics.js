@@ -3,6 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import WidthAndHeights from './object-metrics/WidthAndHeight';
 import PaddingAndMargin from './object-metrics/PaddingAndMargin';
 import DisplayAndPosition from './object-metrics/DisplayAndPosition';
+import FloatingAndContainment from './object-metrics/FloatingAndContainment';
 
 
 const ObjectMetrics = () => {
@@ -24,7 +25,7 @@ const ObjectMetrics = () => {
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('width')}>Width and Height</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('padding')}>Padding and Margins</Link>
                                     <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('display')}>Display and Position</Link>
-                                    {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('background')}>Backgrounds</Link> */}
+                                    <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('float')}>Floating and Containment</Link>
                                     {/* <Link to="#" smooth className="hover:text-black" onClick={() => handleMenuItemClick('shadow')}>Box Shadow</Link> */}
                                 </aside>
                             </div>
@@ -35,7 +36,7 @@ const ObjectMetrics = () => {
                     {active === 'width' && <WidthAndHeights />}
                     {active === 'padding' && <PaddingAndMargin />}
                     {active === 'display' && <DisplayAndPosition />}
-                    {/* {active === 'background' && <Backgrounds />} */}
+                    {active === 'float' && <FloatingAndContainment />}
                     {/* {active === 'shadow' && <BoxShadow />} */}
                 </div>
             </main>

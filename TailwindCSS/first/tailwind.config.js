@@ -14,7 +14,7 @@ module.exports = {
         primary: {
           500: '#FF33FF;',
           800: '#FFFF13;',
-        }
+        },
       },
       fontFamily: {
         raleway: ['Raleway', 'sans-serif'],
