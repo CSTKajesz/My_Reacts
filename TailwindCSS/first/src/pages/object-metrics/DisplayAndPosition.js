@@ -18,6 +18,20 @@ const DisplayAndPosition = () => {
                 • table, inline-table, table-caption, table-cell, table-column, table-column-group, table-footer-group, table-header-group, table-row-group, table-row
                 <br />
                 • list-item, flow-root, grid, inline-grid, contents, hidden
+                <p className="my-8 border-b-2" >
+                    Let's talk about the display property. It's one of the richest and part of every element in HTML.
+                    These classes allow you to modify the display property so that any element doesn't have to use it's standard display properties and can take on any other type of display properties in CSS.
+                    Let's take a look at our example though.
+                    We have the block, inline an inline-block classes. Block is meant for large areas of content and each block section appears on a new line.
+                    Inline isn't allowed a width or heights.
+                    When you choose the inline-block, you have an inline that can take width and heights. Unless there is no spacing between tags, there will be spacing between inline-block items.
+                    There are a number of classes related to different parts of table elements. That lets any element emulate a table's properties. You'll probably never use this one, but you can take a look at the example.
+                    There's support for the two newer layout types. Flex and grid. More on those later.
+                    There's a couple of interesting ones that you might not have used before. Flow root is the Tailwind equivalent of the clearfix and is meant to clear floated elements.
+                    Contents is super interesting in tha it creates a phantom piece of content that can act as it's own element.
+                    Finally hidden is mean or hiding certain elements.
+                </p>
+
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between px-4 py-2">
@@ -153,13 +167,20 @@ const DisplayAndPosition = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_03/index.html#display'>
+                <Link to='https://tailwindcss.com/docs/display'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Position</div>
-
-                <p className="mb-8">• static, fixed, absolute, relative, sticky </p>
+                • static, fixed, absolute, relative, sticky
+                <p className="my-8 border-b-2" >
+                    Position matches the css positioning atribute
+                    static is the default and means that the element is positioned where it would normally go in the page. Static will also ignore offsets.
+                    Relative means that the element is placed relative to where it would normally go, but you can use offsets to move the element by a certain amounts.
+                    Absolute positions an element outside the normal flow as if it didn't exist. Offsets happen from the nearest parent that has a position other than static.
+                    Fixed means that it is positioned relative to the viewport. Normally the browser window.
+                    Sticky is one of the newer attributes and means that the element is positioned as relative until it crosses a certain point.
+                </p>
                 <div className="container mx-auto">
                     <p className="mb-5">Quaerat corrupti voluptatem reiciendis commodi dolores quod alias obcaecati dolore impedit hic libero, voluptatum ducimus sit! Nam autem dolore, quos consectetur, neque saepe ipsam, at dolorum veritatis praesentium nisi delectus?</p>
                     <ul className="sticky top-0 divide-y divide-gray-400 mb-5">
@@ -190,7 +211,7 @@ const DisplayAndPosition = () => {
                     <p className="mb-5">Ex, beatae distinctio culpa autem libero reprehenderit obcaecati corrupti minima voluptatem mollitia exercitationem temporibus odio ad possimus vitae nesciunt, voluptas quam nemo provident, eligendi architecto recusandae necessitatibus quisquam accusantium! Numquam!</p>
                 </div>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_03/index.html#position'>
+                <Link to='https://tailwindcss.com/docs/position'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Top Right Bottom Left</div>
@@ -203,7 +224,11 @@ const DisplayAndPosition = () => {
                 SIZ (0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 72, 80, 96,
                 <br />1/2, 1/3, 2/3, 1/4, 2/4, 3/4, 1/5, 2/5, 3/5, 4/5, 1/6, 2/6, 3/6, 4/6, 5/6, 1/12, 2/12, 3/12, 4/12, 5/12, 6/12, 7/12, 8/12, 9/12, 10/12, 11/12)
                 <br />auto, px, full
-
+                <p className="my-8 border-b-2" >
+                    These directions allow you to position elements in almost any way you want. There is a large range of directions and positions you can use.
+                    inset affects both sides. Also, the numbered sizes are sized relative to the root em, which is normally 16 pixels. A size of 4 in these sizes is 1 rem.
+                    px means a single pixel, while the keyword full means 100% and auto means the browser decides.
+                </p>
                 <div className="container mx-auto">
                     <ul className="sticky top-0 divide-y divide-gray-400 mb-5">
                         <li className="flex items-center justify-between px-4 py-2">
@@ -235,7 +260,7 @@ const DisplayAndPosition = () => {
                 </div>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/04_03/index.html#top-right-bottom-left'>
+                <Link to='https://tailwindcss.com/docs/top-right-bottom-left'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
