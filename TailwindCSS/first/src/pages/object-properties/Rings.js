@@ -10,6 +10,11 @@ const Rings = () => {
                 • ring(-AMT)
                 <br />
                 AMT (0, 1, 2, 4, 8, inset)
+                <p className="my-8 border-b-2" >
+                    There are four sizes besides 0, but interestingly enough, if you just use ring without a size you get an extra size, which is the equivalent of three pixels.
+                    You can also add an inset option to any of these sizes to make the box shadow display inside.
+                </p>
+
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -39,8 +44,9 @@ const Rings = () => {
                 • ring-opacity-AMT
                 <br />
                 AMT (0, 5, 10, 20 25, 30, 40, 50, 60, 70, 75, 80, 90, 95, 100)
-
-
+                <p className="my-8 border-b-2" >
+                    Opacity is similar to the border opacity with each value listed here being the equivalent in decimal measurements. So 20 means an opacity of .2. Again the nice thing here is that you can do the opacity of just the outline in the same place that you set the background color and border with. It's part of Tailwind's charm by using a variable.
+                </p>
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -76,6 +82,10 @@ const Rings = () => {
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Ring Color</div>
                 • ring-COL-STR
+                <p className="my-8 border-b-2" >
+                    Colors and it's options are exactly the same as borders, so there's not much to say here, other than the default color for a ring is blue, so if you don't specify a color, but have a ring, it will be a light blue.
+                    Just like with the ring color, a variable controls the color so that you can set all options at the same level.
+                </p>
                 <ul className="container mx-auto">
                     <li className="flex items-center justify-between px-4 py-2">
                         <div>
@@ -107,6 +117,9 @@ const Rings = () => {
                 • ring-offset-WDT
                 <br />
                 WDT(0, 1, 2, 4, 8)
+                <p className="my-8 border-b-2" >
+                    The offset width lets you simulate an offset of the ring by adding a solid white border of a certain size.
+                </p>
                 <ul className="container mx-auto">
                     <li className="flex items-center justify-between px-4 py-2">
                         <div>
@@ -126,16 +139,16 @@ const Rings = () => {
                     </li>
                 </ul>
 
-
-
                 <Link to='https://tailwindcss.com/docs/ring-offset-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Ring Offset Color</div>
                 • ring-offset-COL-STR
-
-
+                <p className="my-8 border-b-2" >
+                    You can also set the color of the ring's space to whatever color you want, which gives you some other options for styles.
+                    The color are the usual variables, which includes black, white and transparent, plus the current color option as well.
+                </p>
                 <ul className="container mx-auto">
                     <li className="flex items-center justify-between px-4 py-2">
                         <div>
@@ -160,15 +173,16 @@ const Rings = () => {
                     </li>
                 </ul>
 
-
-
-
                 <Link to='https://tailwindcss.com/docs/ring-offset-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Ring Focus Variants</div>
                 • focus:
+                <p className="my-8 border-b-2" >
+                    There are two other properties you can use to modify the rings. These are prefixes that you use as modifier. Focus lets you control the look fields when they gain focus, so this is really good for things like buttons and other input fields in forms.
+                    By default, rings are drawn on the outside of an element, but there's a variant you can use to switch that so it displays inside the element.
+                </p>
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between px-4 py-2">
                         <div className="w-full">
