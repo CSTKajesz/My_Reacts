@@ -31,7 +31,7 @@ const Rings = () => {
 
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_02/index.html#ring-width'>
+                <Link to='https://tailwindcss.com/docs/ring-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -70,7 +70,7 @@ const Rings = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_02/index.html#ring-opacity'>
+                <Link to='https://tailwindcss.com/docs/ring-opacity'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -99,7 +99,7 @@ const Rings = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_02/index.html#ring-color'>
+                <Link to='https://tailwindcss.com/docs/ring-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -128,7 +128,7 @@ const Rings = () => {
 
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_02/index.html#ring-offset-width'>
+                <Link to='https://tailwindcss.com/docs/ring-offset-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -163,7 +163,7 @@ const Rings = () => {
 
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_02/index.html#ring-offset-color'>
+                <Link to='https://tailwindcss.com/docs/ring-offset-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -181,7 +181,7 @@ const Rings = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_02/index.html#ring-focus-variants'>
+                <Link to='https://tailwindcss.com/docs/ring-focus-variants'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
