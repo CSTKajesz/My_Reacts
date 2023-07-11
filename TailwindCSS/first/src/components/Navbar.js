@@ -23,9 +23,6 @@ export default function Navbar() {
     const [isShowing, setIsShowing] = useState(false);
     const active = location.pathname;
 
-    const handleBackButtonClick = () => {
-        navigate(-1);
-    };
 
     return (
         <Disclosure as="nav" className="bg-gray-100">

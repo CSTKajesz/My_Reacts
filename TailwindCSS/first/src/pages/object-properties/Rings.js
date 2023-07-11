@@ -21,7 +21,6 @@ const Rings = () => {
                             <div className="ring-4 font-bold text-blue-500 rounded-md p-2 my-4 text-center">Spring</div>
                             <div className="ring-8 font-bold text-blue-500 rounded-md p-2 my-4 text-center">Spring</div>
                             <div className="ring-8 ring-inset font-bold text-blue-500 rounded-md p-2 my-4 text-center">Spring</div>
-                            <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">box-shadow</span></div>
                         </div>
                         <div className="ml-5 text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">border-SID-AMT</div>
