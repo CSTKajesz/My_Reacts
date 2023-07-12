@@ -12,6 +12,10 @@ const Divide = () => {
                 SID (x, yellow)
                 <br />
                 AMT (0, 2, 4, 8, reverse)
+                <p className="my-8 border-b-2" >
+
+                </p>
+
                 <ul className="container mx-auto">
                     <li className="flex items-center justify-between px-4 py-2">
                         <div>
@@ -34,7 +38,7 @@ const Divide = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_03/index.html#divide-width'>
+                <Link to='https://tailwindcss.com/docs/divide-width'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -42,7 +46,9 @@ const Divide = () => {
                 • Divide-opacity-AMT
                 <br />
                 AMT (0, 5, 10, 20 25, 30, 40, 50, 60, 70, 75, 80, 90, 95, 100)
+                <p className="my-8 border-b-2" >
 
+                </p>
 
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between px-4 py-2">
@@ -198,12 +204,16 @@ const Divide = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_03/index.html#divide-opacity'>
+                <Link to='https://tailwindcss.com/docs/divide-opacity'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Divide Color</div>
                 • divide-COL-STR
+                <p className="my-8 border-b-2" >
+
+                </p>
+
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between pl-4 py-2">
                         <div>
@@ -259,7 +269,7 @@ const Divide = () => {
                 </div>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_03/index.html#divide-color'>
+                <Link to='https://tailwindcss.com/docs/divide-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -267,6 +277,10 @@ const Divide = () => {
                 • divide-(STL)
                 <br />
                 STL (none, solid, dashed, dotted, double)
+                <p className="my-8 border-b-2" >
+
+                </p>
+
                 <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center justify-between pl-4 py-2">
                         <div>
@@ -307,7 +321,7 @@ const Divide = () => {
 
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_03/index.html#divide-style'>
+                <Link to='https://tailwindcss.com/docs/divide-style'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
             </section>
