@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Flexbox from './layout/Flexbox';
+import Grids from './layout/Grids';
 
 const Layout = () => {
     const [active, setActive] = useState('flex');
@@ -51,13 +52,13 @@ const Layout = () => {
                                     >
                                         Flexbox
                                     </Link>
-                                    {/* <Link
-                                        to="#padding"
-                                        className={`hover:text-black ${active === 'padding' && 'font-bold'}`}
-                                        onClick={() => handleMenuItemClick('padding')}
+                                    <Link
+                                        to="#grid"
+                                        className={`hover:text-black ${active === 'grid' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('grid')}
                                     >
-                                        Padding and Margins
-                                    </Link> */}
+                                        Grids
+                                    </Link>
                                     {/* <Link
                                         to="#display"
                                         className={`hover:text-black ${active === 'display' && 'font-bold'}`}
@@ -86,7 +87,7 @@ const Layout = () => {
                 </div>
                 <div className="h-screen mt-[125px]">
                     {active === 'flex' && <Flexbox />}
-                    {/* {active === 'padding' && <PaddingAndMargin />} */}
+                    {active === 'grid' && <Grids />}
                     {/* {active === 'display' && <DisplayAndPosition />} */}
                     {/* {active === 'float' && <FloatingAndContainment />} */}
                     {/* {active === 'other' && <OtherProperties />} */}

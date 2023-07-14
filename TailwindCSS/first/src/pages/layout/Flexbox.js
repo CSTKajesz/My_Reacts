@@ -2,7 +2,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 
-const Divide = () => {
+const Flexbox = () => {
     return (
         <>
             <section>
@@ -286,4 +286,4 @@ const Divide = () => {
     )
 }
 
-export default Divide
+export default Flexbox
