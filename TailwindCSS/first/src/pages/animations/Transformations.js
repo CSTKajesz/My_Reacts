@@ -9,34 +9,34 @@ const Transformations = () => {
                 <div className="text-2xl border-t-8 border-b-2 mb-8">Transform</div>
                 • transform, transform-gpu, transform-none
                 <p className="my-8 border-b-2" >
-                    There are three main transformation classes. It sets up the element so that it can be transform and acts as a reset for all of the transformation properties like translate, rotate, skew and scale.
-                    The transform class is the base class and there's an optional class that tries to use the GPU or Graphical User Processor if it's available. That can yield faster animations.
-                    The last class will ignore transforms if they exist.
+                    There are three main transformation classNamees. It sets up the element so that it can be transform and acts as a reset for all of the transformation properties like translate, rotate, skew and scale.
+                    The transform className is the base className and there's an optional className that tries to use the GPU or Graphical User Processor if it's available. That can yield faster animations.
+                    The last className will ignore transforms if they exist.
                 </p>
 
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="transform rotate-45 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="transform rotate-45 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">transform</div>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="transform-gpu rotate-180 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                        </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">transform-gpu</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">transform</div>
                         </div>
                     </li>
-                    <li class="flex items-center justify-between px-4 py-2">
-                        <div class="w-full">
-                            <img class="transform-none rotate-45 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="transform-gpu rotate-180 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">transform-none</div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">transform-gpu</div>
+                        </div>
+                    </li>
+                    <li className="flex items-center justify-between px-4 py-2">
+                        <div className="w-full">
+                            <img className="transform-none rotate-45 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                        </div>
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">transform-none</div>
                         </div>
                     </li>
                 </ul>
@@ -52,15 +52,15 @@ const Transformations = () => {
                 <p className="my-8 border-b-2" >
                     Since we already looked at rotation, let's take a look at the options there. You can rotate on 9 different angles. Rotation happens clockwise by default, but you can add a negative sign at the beginning so that it goes counter clockwise.
                 </p>
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center space-between px-4 py-2">
-                        <div class="w-full bg-yellow-200 h-32 flex items-center">
-                            <img class="transform h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <img class="transform -rotate-180 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center space-between px-4 py-2">
+                        <div className="w-full bg-yellow-200 h-32 flex items-center">
+                            <img className="transform h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                            <img className="transform -rotate-180 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">(-)rotate(-DEG)</div>
-                            <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">DEG</b><br />
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">(-)rotate(-DEG)</div>
+                            <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">DEG</b><br />
                                 0 1 2 3 6<br />12 45 90 180
                             </div>
                         </div>
@@ -82,15 +82,15 @@ const Transformations = () => {
                     There's really just a handful of sizes here and honestly, they seem inadequate.
                 </p>
 
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center space-between px-4 py-2">
-                        <div class="w-full bg-purple-400 h-32 flex items-center">
-                            <img class="transform h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <img class="transform scale-150 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center space-between px-4 py-2">
+                        <div className="w-full bg-purple-400 h-32 flex items-center">
+                            <img className="transform h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                            <img className="transform scale-150 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">scale(-DIR)(-SIZ)</div>
-                            <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">SIZ</b><br />
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">scale(-DIR)(-SIZ)</div>
+                            <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">SIZ</b><br />
                                 0 50 75 90 95 100 105 110 125 150
                             </div>
                         </div>
@@ -109,17 +109,17 @@ const Transformations = () => {
                 <p className="my-8 border-b-2" >
                     Another transformation you can perform is a skew that takes in an angle, direction and can optionally take in a negative value.
                 </p>
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center space-between px-4 py-2">
-                        <div class="w-full bg-purple-400 h-32 flex items-center">
-                            <img class="transform h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <img class="transform -skew-x-12 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center space-between px-4 py-2">
+                        <div className="w-full bg-purple-400 h-32 flex items-center">
+                            <img className="transform h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                            <img className="transform -skew-x-12 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">(-)skew(-DIR)(-DEG)</div>
-                            <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">DIR</b><br />
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">(-)skew(-DIR)(-DEG)</div>
+                            <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">DIR</b><br />
                                 x y
-                                <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">DEG</b><br />
+                                <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">DEG</b><br />
                                     0 1 2 3 6 12
                                 </div>
                             </div>
@@ -142,16 +142,16 @@ const Transformations = () => {
                 <p className="my-8 border-b-2" >
                     Translating means moving the object in a certain direction from it's origin. You can go in the x or y direction and also move in a negative direction with a full compliment of amounts from 0 to 96, fractions, px which is one pixel and full which is the full width.
                 </p>
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center space-between px-4 py-2">
-                        <div class="w-full bg-indigo-300 h-96 flex items-center">
-                            <img class="transform translate-x-16 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center space-between px-4 py-2">
+                        <div className="w-full bg-indigo-300 h-96 flex items-center">
+                            <img className="transform translate-x-16 h-16 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">(-)translate(-DIR)(-AMT)</div>
-                            <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">DIR</b><br />
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">(-)translate(-DIR)(-AMT)</div>
+                            <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">DIR</b><br />
                                 x y
-                                <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">AMT</b><br />
+                                <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">AMT</b><br />
                                     0 0.5 1 1.5 2 2.5 3<br />
                                     3.5 4 5 6 7 8 9 10<br />
                                     11 12 14 16 20 24 28<br />
@@ -175,17 +175,17 @@ const Transformations = () => {
                 <br />
                 DIR (center, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left)
                 <p className="my-8 border-b-2" >
-                    These classes will let you set the origin for transformations. The names are pretty self explanatory.
+                    These classNamees will let you set the origin for transformations. The names are pretty self explanatory.
                 </p>
 
-                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li class="flex items-center space-between px-4 py-2">
-                        <div class="w-full bg-yellow-200">
-                            <img class="transform origin-left rotate-12 h-40 bg-indigo-400" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li className="flex items-center space-between px-4 py-2">
+                        <div className="w-full bg-yellow-200">
+                            <img className="transform origin-left rotate-12 h-40 bg-indigo-400" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
                         </div>
-                        <div class="ml-5 text-right">
-                            <div class="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">origin(-DIR)</div>
-                            <div class="text-xs font-mono text-gray-500"><b class="text-black mt-3 inline-block">DIR</b><br />
+                        <div className="ml-5 text-right">
+                            <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">origin(-DIR)</div>
+                            <div className="text-xs font-mono text-gray-500"><b className="text-black mt-3 inline-block">DIR</b><br />
                                 center top<br /> top-right
                                 right<br />bottom-right
                                 bottom <br />bottom-left
