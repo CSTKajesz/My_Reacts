@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Flexbox from './layout/Flexbox';
 import Grids from './layout/Grids';
+import BoxAlignment from './layout/BoxAlignment';
 
 const Layout = () => {
     const [active, setActive] = useState('flex');
@@ -59,13 +60,13 @@ const Layout = () => {
                                     >
                                         Grids
                                     </Link>
-                                    {/* <Link
-                                        to="#display"
-                                        className={`hover:text-black ${active === 'display' && 'font-bold'}`}
-                                        onClick={() => handleMenuItemClick('display')}
+                                    <Link
+                                        to="#alignment"
+                                        className={`hover:text-black ${active === 'alignment' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('alignment')}
                                     >
-                                        Display and Position
-                                    </Link> */}
+                                        BoxAlignment
+                                    </Link>
                                     {/* <Link
                                         to="#float"
                                         className={`hover:text-black ${active === 'float' && 'font-bold'}`}
@@ -88,7 +89,7 @@ const Layout = () => {
                 <div className="h-screen mt-[125px]">
                     {active === 'flex' && <Flexbox />}
                     {active === 'grid' && <Grids />}
-                    {/* {active === 'display' && <DisplayAndPosition />} */}
+                    {active === 'alignment' && <BoxAlignment />}
                     {/* {active === 'float' && <FloatingAndContainment />} */}
                     {/* {active === 'other' && <OtherProperties />} */}
                 </div>
