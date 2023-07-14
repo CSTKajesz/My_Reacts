@@ -48,7 +48,6 @@ const ObjectProperties = () => {
                     <div className="w-full p-6 sm:w-60 bg-gray-200 text-indigo-500 sticky top-0">
                         <nav className="space-y-8 text-sm">
                             <div className="space-y-2">
-                                <h2 className="text-sm font-semibold text-indigo-300">Object properties</h2>
                                 <aside className="flex flex-col space-y-1">
                                     <Link
                                         to="#border"
