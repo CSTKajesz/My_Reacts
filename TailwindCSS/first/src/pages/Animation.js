@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Transformations from './animations/Transformations';
+import Transistions from './animations/Transistions';
 
 const Animation = () => {
     const [active, setActive] = useState('transform');
@@ -49,13 +50,13 @@ const Animation = () => {
                                     >
                                         Transformations
                                     </Link>
-                                    {/* <Link
-                                        to="#grid"
-                                        className={`hover:text-black ${active === 'grid' && 'font-bold'}`}
-                                        onClick={() => handleMenuItemClick('grid')}
+                                    <Link
+                                        to="#transitions"
+                                        className={`hover:text-black ${active === 'transitions' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('transitions')}
                                     >
-                                        Grids
-                                    </Link> */}
+                                        Transitions
+                                    </Link>
                                     {/* <Link
                                         to="#alignment"
                                         className={`hover:text-black ${active === 'alignment' && 'font-bold'}`}
@@ -71,7 +72,7 @@ const Animation = () => {
                 </div>
                 <div className="h-screen mt-[125px]">
                     {active === 'transform' && <Transformations />}
-                    {/* {active === 'grid' && <Grids />} */}
+                    {active === 'transitions' && <Transistions />}
                     {/* {active === 'alignment' && <BoxAlignment />} */}
                 </div>
             </main>
