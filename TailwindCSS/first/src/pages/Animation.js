@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Transformations from './animations/Transformations';
 import Transistions from './animations/Transistions';
 import Animations from './animations/Animations';
+import Filters from './animations/Filters';
 
 const Animation = () => {
     const [active, setActive] = useState('transform');
@@ -65,6 +66,13 @@ const Animation = () => {
                                     >
                                         Animations
                                     </Link>
+                                    <Link
+                                        to="#filter"
+                                        className={`hover:text-black ${active === 'filter' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('filter')}
+                                    >
+                                        Filter
+                                    </Link>
 
                                 </aside>
                             </div>
@@ -75,6 +83,7 @@ const Animation = () => {
                     {active === 'transform' && <Transformations />}
                     {active === 'transitions' && <Transistions />}
                     {active === 'animation' && <Animations />}
+                    {active === 'filter' && <Filters />}
                 </div>
             </main>
         </>
