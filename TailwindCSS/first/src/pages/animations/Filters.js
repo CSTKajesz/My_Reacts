@@ -146,6 +146,146 @@ const Filters = () => {
                 <Link to='https://tailwindcss.com/docs/brightness'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Contrast</div>
+                • contrast(-AMT)
+                <br />
+                AMT (0, 50, 75, 90, 95, 100, 105, 110, 125, 150, 200)
+                <p className="my-8 border-b-2" >
+                    Then there's a way to adjust the contrast of an image with an amount from 0 to 200 which really pushes the contrast of an image.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-0 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-50 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-50</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-75 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-75</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-100 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-100</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-125 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-125</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-150 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-150</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter contrast-200 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-200</div>
+                    </li>
+                </ul>
+
+
+                <Link to='https://tailwindcss.com/docs/contrast'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Saturate</div>
+                • saturate-(AMT)
+                <br />
+                AMT (0, 50, 100, 150, 200)
+                <p className="my-8 border-b-2" >
+                    Saturate modify how strong an image colors look. There's just a few amounts to worry about.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter saturate-0 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter saturate-50 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-50</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter saturate-100 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-100</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter saturate-150 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-150</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter saturate-200 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-200</div>
+                    </li>
+                </ul>
+
+                <Link to='https://tailwindcss.com/docs/saturate'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Hue Rotate</div>
+                • (-)hue-rotate-(AMT)
+                <br />
+                AMT (0, 15, 30, 60, 90, 180)
+                <p className="my-8 border-b-2" >
+                    The hue-rotate filter lets you rotate the colors in an image 360 degrees.
+                    To use it you specify an amount that goes from -180 to 180. The rotation is about a 30 degree offset, but there are some numbers clearly missing here after 90 degrees.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter -hue-rotate-180 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-180</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter -hue-rotate-90 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-90</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter -hue-rotate-60 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-60</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter -hue-rotate-30 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-30</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter -hue-rotate-15 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-15</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter hue-rotate-0 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter hue-rotate-15 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-15</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter hue-rotate-30 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-30</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter hue-rotate-60 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-60</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter hue-rotate-90 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-90</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter hue-rotate-180 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-180</div>
+                    </li>
+                </ul>
+
+
+
+                <Link to='https://tailwindcss.com/docs/hue-rotate'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
 
             </section >
             <ScrollToTopButton />
