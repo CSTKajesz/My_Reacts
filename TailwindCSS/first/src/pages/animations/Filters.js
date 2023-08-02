@@ -104,6 +104,48 @@ const Filters = () => {
                 <Link to='https://tailwindcss.com/docs/drop-shadow'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Brightness</div>
+                • brightness(-AMT)
+                <br />
+                AMT (0, 50, 75, 90, 95, 100, 105, 110, 125, 150, 200)
+                <p className="my-8 border-b-2" >
+                    The brightness filter lets you apply brightness to some content.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-50 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-50</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-75 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-75</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-100 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-100</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-125 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-125</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-150 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-150</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter brightness-200 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">brightness-200</div>
+                    </li>
+                </ul>
+
+                <Link to='https://tailwindcss.com/docs/brightness'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
 
             </section >
             <ScrollToTopButton />
