@@ -60,6 +60,50 @@ const Filters = () => {
                 <Link to='https://tailwindcss.com/docs/blur'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Drop Shadow</div>
+                • drop-shadow(-AMT)
+                <br />
+                AMT (sm, *, md, lg, xl, 2xl, 3xl, none)
+                <p className="my-8 border-b-2" >
+                    You can add the dropshadow filter with different amounts. If you don't add an amount, it will do a drop shadow between sm and medium.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow-none bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow-none</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow-sm bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow-sm</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow-md bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow-md</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow-lg bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow-lg</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow-xl bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow-xl</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter drop-shadow-2xl bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">drop-shadow-2xl</div>
+                    </li>
+                </ul>
+
+
+
+                <Link to='https://tailwindcss.com/docs/drop-shadow'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
 
             </section >
             <ScrollToTopButton />
