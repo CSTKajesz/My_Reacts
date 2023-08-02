@@ -156,31 +156,31 @@ const Filters = () => {
                 </p>
                 <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-0 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-0</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-50 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-50 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-50</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-75 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-75 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-75</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-100 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-100 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-100</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-125 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-125 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-125</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-150 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-150 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-150</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter contrast-200 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter contrast-200 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">contrast-200</div>
                     </li>
                 </ul>
@@ -200,23 +200,23 @@ const Filters = () => {
                 </p>
                 <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter saturate-0 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter saturate-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-0</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter saturate-50 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter saturate-50 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-50</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter saturate-100 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter saturate-100 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-100</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter saturate-150 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter saturate-150 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-150</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter saturate-200 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/swamp_sq.png');"></div>
+                        <div class="filter saturate-200 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">saturate-200</div>
                     </li>
                 </ul>
@@ -236,47 +236,47 @@ const Filters = () => {
                 </p>
                 <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter -hue-rotate-180 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter -hue-rotate-180 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-180</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter -hue-rotate-90 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter -hue-rotate-90 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-90</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter -hue-rotate-60 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter -hue-rotate-60 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-60</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter -hue-rotate-30 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter -hue-rotate-30 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-30</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter -hue-rotate-15 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter -hue-rotate-15 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">-hue-rotate-15</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter hue-rotate-0 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter hue-rotate-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-0</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter hue-rotate-15 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter hue-rotate-15 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-15</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter hue-rotate-30 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter hue-rotate-30 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-30</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter hue-rotate-60 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter hue-rotate-60 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-60</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter hue-rotate-90 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter hue-rotate-90 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-90</div>
                     </li>
                     <li class="flex items-center justify-between py-4">
-                        <div class="filter hue-rotate-180 bg-cover bg-center bg-no-repeat w-32 h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                        <div class="filter hue-rotate-180 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/powship.svg')" }}></div>
                         <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">hue-rotate-180</div>
                     </li>
                 </ul>
@@ -284,6 +284,72 @@ const Filters = () => {
 
 
                 <Link to='https://tailwindcss.com/docs/hue-rotate'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Grayscale</div>
+                • grayscale
+                • grayscale-0
+                <p className="my-8 border-b-2" >
+                    The grayscale filter is one of the simplest filters and simply takes a color image and converts it to grayscale.
+                    There's a reset option to toggle the image back to full color.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter grayscale-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">grayscale-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter grayscale bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">grayscale</div>
+                    </li></ul>
+
+
+
+                <Link to='https://tailwindcss.com/docs/grayscale'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Invert</div>
+                • invert
+                • invert-0
+                <p className="my-8 border-b-2" >
+                    The invert filter flips the colors in an image with their oposite color. There's just two options, one to invert and one to reset.
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter invert-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">invert-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter invert bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">invert</div>
+                    </li>
+                </ul>
+                <Link to='https://tailwindcss.com/docs/invert'>
+                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
+                </Link>
+                <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Sepia</div>
+                • sepia
+                • sepia-0
+                <p className="my-8 border-b-2" >
+                    Sepia gives photo a duotone sort of style that looks pretty cool. It has a simple toggle style where you apply the filter with the sepia keyword and reset it with sepia-0
+
+                </p>
+                <ul class="container mx-auto divide-y divide-gray-400 divide-dotted">
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter sepia-0 bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">sepia-0</div>
+                    </li>
+                    <li class="flex items-center justify-between py-4">
+                        <div class="filter sepia bg-cover bg-center bg-no-repeat w-32 h-32" style={{ backgroundImage: "url('http://pixelprowess.com/i/swamp_sq.png')" }}></div>
+                        <div class="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">sepia</div>
+                    </li>
+                </ul>
+
+
+
+                <Link to='https://tailwindcss.com/docs/sepia'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
