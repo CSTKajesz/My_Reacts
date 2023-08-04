@@ -35,7 +35,7 @@ const FontDirectives = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">font-mono</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_01/index.html#font-family'>
+                <Link to='https://tailwindcss.com/docs/font-family'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -116,7 +116,7 @@ const FontDirectives = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">text-6xl</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_01/index.html#font-size'>
+                <Link to='https://tailwindcss.com/docs/font-size'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -189,7 +189,7 @@ const FontDirectives = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">font-black</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_01/index.html#font-wight'>
+                <Link to='https://tailwindcss.com/docs/font-weight'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -218,7 +218,7 @@ const FontDirectives = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">outline</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_01/index.html#font-style'>
+                <Link to='https://tailwindcss.com/docs/font-style'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -300,7 +300,7 @@ const FontDirectives = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-yellow-400 rounded-2">stacked-fractions</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_01/index.html#font-variant-numeric'>
+                <Link to='https://tailwindcss.com/docs/font-variant-numeric'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 

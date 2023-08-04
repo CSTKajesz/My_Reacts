@@ -81,7 +81,7 @@ const SpacingTypography = () => {
                             <p className="leading-none text-md">Belle is a safety inspector at Binaryville's Advanced Robotics Assembly Division, and while she doesn't particularly like to toot her own horn, her job does require blaring her siren and flashing her warning light whenever a safety concern is discovered.</p>
                             <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">line-height</span>: 1</div>
                         </div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-500 rounded-2">leading-none</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-black bg-pink-500 rounded-2">leading-none</div>
                     </li>
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -89,7 +89,7 @@ const SpacingTypography = () => {
                             <p className="leading-tight text-md">Belle is a safety inspector at Binaryville's Advanced Robotics Assembly Division, and while she doesn't particularly like to toot her own horn, her job does require blaring her siren and flashing her warning light whenever a safety concern is discovered.</p>
                             <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">line-height</span>: 1.25</div>
                         </div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-500 rounded-2">leading-tight</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-black bg-pink-500 rounded-2">leading-tight</div>
                     </li>
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -97,7 +97,7 @@ const SpacingTypography = () => {
                             <p className="leading-snug text-md">Belle is a safety inspector at Binaryville's Advanced Robotics Assembly Division, and while she doesn't particularly like to toot her own horn, her job does require blaring her siren and flashing her warning light whenever a safety concern is discovered.</p>
                             <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">line-height</span>: 1.375</div>
                         </div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-500 rounded-2">leading-snug</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-black bg-pink-500 rounded-2">leading-snug</div>
                     </li>
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -105,7 +105,7 @@ const SpacingTypography = () => {
                             <p className="leading-normal text-md">Belle is a safety inspector at Binaryville's Advanced Robotics Assembly Division, and while she doesn't particularly like to toot her own horn, her job does require blaring her siren and flashing her warning light whenever a safety concern is discovered.</p>
                             <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">line-height</span>: 1.5</div>
                         </div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-500 rounded-2">leading-normal</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-black bg-pink-500 rounded-2">leading-normal</div>
                     </li>
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -113,7 +113,7 @@ const SpacingTypography = () => {
                             <p className="leading-relaxed text-md">Belle is a safety inspector at Binaryville's Advanced Robotics Assembly Division, and while she doesn't particularly like to toot her own horn, her job does require blaring her siren and flashing her warning light whenever a safety concern is discovered.</p>
                             <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">line-height</span>: 1.625</div>
                         </div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-500 rounded-2">leading-relaxed</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-black bg-pink-500 rounded-2">leading-relaxed</div>
                     </li>
 
                     <li className="flex items-center justify-between px-4 py-2">
@@ -121,12 +121,12 @@ const SpacingTypography = () => {
                             <p className="leading-loose text-md">Belle is a safety inspector at Binaryville's Advanced Robotics Assembly Division, and while she doesn't particularly like to toot her own horn, her job does require blaring her siren and flashing her warning light whenever a safety concern is discovered.</p>
                             <div className="text-xs font-mono font-light text-gray-500 mt-2"><span className="font-bold">line-height</span>: 2</div>
                         </div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-500 rounded-2">leading-loose</div>
+                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-black bg-pink-500 rounded-2">leading-loose</div>
                     </li>
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_04/index.html#line-height'>
+                <Link to='https://tailwindcss.com/docs/line-height'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -181,7 +181,7 @@ const SpacingTypography = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_04/index.html#letter-spacing'>
+                <Link to='https://tailwindcss.com/docs/letter-spacing'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
             </section>

@@ -15,6 +15,7 @@ const Animation = () => {
         setActive(menuId);
     };
 
+
     useEffect(() => {
         const { pathname } = location;
         const hash = active !== 'transform' ? `#${active}` : '';

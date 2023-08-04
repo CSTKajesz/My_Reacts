@@ -132,7 +132,7 @@ const TextDirectives = () => {
                     </tr>
                 </table>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#text-colors'>
+                <Link to='https://tailwindcss.com/docs/text-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -245,7 +245,7 @@ const TextDirectives = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 text-white bg-pink-500 rounded">text-opacity-100</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#text-opacity'>
+                <Link to='https://tailwindcss.com/docs/text-opacity'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -288,7 +288,7 @@ const TextDirectives = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#text-alignment'>
+                <Link to='https://tailwindcss.com/docs/text-alignment'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Text Decoration</div>
@@ -320,7 +320,7 @@ const TextDirectives = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#text-decoration'>
+                <Link to='https://tailwindcss.com/docs/text-decoration'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -357,7 +357,7 @@ const TextDirectives = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#text-transform'>
+                <Link to='https://tailwindcss.com/docs/text-transform'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -384,7 +384,7 @@ const TextDirectives = () => {
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/02_02/index.html#text-overflow'>
+                <Link to='https://tailwindcss.com/docs/text-overflow'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
             </section>
