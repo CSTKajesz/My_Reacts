@@ -39,5 +39,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-font-inter'),
   ],
+  mode: 'jit',
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 }
 

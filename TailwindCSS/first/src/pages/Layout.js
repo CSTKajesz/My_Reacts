@@ -8,7 +8,6 @@ const Layout = () => {
     const [active, setActive] = useState('flex');
     const [originalUrl, setOriginalUrl] = useState('');
     const location = useLocation();
-    const navigate = useNavigate();
 
     const handleMenuItemClick = (menuId) => {
         setActive(menuId);

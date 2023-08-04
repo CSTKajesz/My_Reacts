@@ -10,7 +10,6 @@ const ObjectMetrics = () => {
     const [active, setActive] = useState('width');
     const [originalUrl, setOriginalUrl] = useState('');
     const location = useLocation();
-    const navigate = useNavigate();
 
     const handleMenuItemClick = (menuId) => {
         setActive(menuId);
