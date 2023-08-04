@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import FormUtilities from './other-options/FormUtilities';
 import Tables from './other-options/Tables';
 import Svg from './other-options/Svg';
+import ScreenReaders from './other-options/ScreenReaders';
+import Interactive from './other-options/Interactive';
 
 
 
@@ -67,20 +69,20 @@ const OtherOptions = () => {
                                     >
                                         SVG
                                     </Link>
-                                    {/*<Link
-                                        to="#filter"
-                                        className={`hover:text-black ${active === 'filter' && 'font-bold'}`}
-                                        onClick={() => handleMenuItemClick('filter')}
+                                    <Link
+                                        to="#screen-readers"
+                                        className={`hover:text-black ${active === 'screen-raders' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('screen-readers')}
                                     >
-                                        Filter
+                                        Screen Readers
                                     </Link>
                                     <Link
-                                        to="#mixing"
-                                        className={`hover:text-black ${active === 'mixign' && 'font-bold'}`}
-                                        onClick={() => handleMenuItemClick('mixign')}
+                                        to="#interactive"
+                                        className={`hover:text-black ${active === 'interactive' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('interactive')}
                                     >
-                                        Mixing Utilities
-                                    </Link> */}
+                                        Interactive
+                                    </Link>
 
                                 </aside>
                             </div>
@@ -91,9 +93,8 @@ const OtherOptions = () => {
                     {active === 'form' && <FormUtilities />}
                     {active === 'tables' && <Tables />}
                     {active === 'svg' && <Svg />}
-                    {/*{active === 'animation' && <Animations />}
-                    {active === 'filter' && <Filters />}
-                    {active === 'mixing' && <MixingUtilities />} */}
+                    {active === 'screen-readers' && <ScreenReaders />}
+                    {active === 'interactive' && <Interactive />}
                 </div>
             </main>
         </>
