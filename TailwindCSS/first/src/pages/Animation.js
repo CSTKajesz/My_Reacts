@@ -4,6 +4,7 @@ import Transformations from './animations/Transformations';
 import Transistions from './animations/Transistions';
 import Animations from './animations/Animations';
 import Filters from './animations/Filters';
+import MixingUtilities from './animations/MixingUtilities';
 
 const Animation = () => {
     const [active, setActive] = useState('transform');
@@ -73,6 +74,13 @@ const Animation = () => {
                                     >
                                         Filter
                                     </Link>
+                                    <Link
+                                        to="#mixign"
+                                        className={`hover:text-black ${active === 'mixign' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('mixign')}
+                                    >
+                                        Mixing Utilites
+                                    </Link>
 
                                 </aside>
                             </div>
@@ -84,6 +92,7 @@ const Animation = () => {
                     {active === 'transitions' && <Transistions />}
                     {active === 'animation' && <Animations />}
                     {active === 'filter' && <Filters />}
+                    {active === 'mixing' && <MixingUtilities />}
                 </div>
             </main>
         </>
