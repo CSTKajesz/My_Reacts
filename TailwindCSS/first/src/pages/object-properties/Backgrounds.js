@@ -11,7 +11,7 @@ const Backgrounds = () => {
                 <table className="border-separate [border-spacing:0.75rem]">
 
                     <tr className="row">
-                        <th className="font-bold pr-4">Backgraound colors</th>
+                        <th className="font-bold pr-4">Background colors</th>
                     </tr>
                     <tr className="row">
                         <th className="font-bold text-black">Black</th>
