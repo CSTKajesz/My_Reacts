@@ -157,6 +157,7 @@ const MixingUtilities = () => {
 
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Isolation</div>
                 • isolate
+                <br />
                 • isolation-auto
 
                 <p className="my-8 border-b-2" >
@@ -183,11 +184,11 @@ const MixingUtilities = () => {
                 <p className="my-8 border-b-2" >
                     If an element has a background image as well as a background color, you can use the background blend mode to control how the image blends with its background color.
                 </p>
-                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted" style="font-family: Raleway">
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-multiply bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-multiply bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-multiply</div>
@@ -196,7 +197,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-screen bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-screen bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-screen</div>
@@ -205,7 +206,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-overlay bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-overlay bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-overlay</div>
@@ -214,7 +215,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-darken bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-darken bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-darken</div>
@@ -223,7 +224,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-lighten bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-lighten bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-lighten</div>
@@ -232,7 +233,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-color-dodge bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-color-dodge bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-color-dodge</div>
@@ -241,7 +242,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-color-burn bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-color-burn bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-color-burn</div>
@@ -250,7 +251,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-hard-light bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-hard-light bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-hard-light</div>
@@ -259,7 +260,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-soft-light bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-soft-light bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-soft-light</div>
@@ -268,7 +269,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-difference bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-difference bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-difference</div>
@@ -277,7 +278,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-exclusion bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-exclusion bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-exclusion</div>
@@ -286,7 +287,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-hue bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-hue bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-hue</div>
@@ -295,7 +296,7 @@ const MixingUtilities = () => {
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 flex items-center">
                             <img className="bg-yellow-200 h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />
-                            <div className="bg-blend-saturation bg-yellow-200 w-full bg-center bg-no-repeat h-32" style="background-image:url('http://pixelprowess.com/i/powship.svg');"></div>
+                            <div className="bg-blend-saturation bg-yellow-200 w-full bg-center bg-no-repeat h-32" style={{ backgroundImage: 'url(http://pixelprowess.com/i/powship.svg)' }}></div>
                         </div>
                         <div className="ml-auto text-right">
                             <div className="text-xs font-semibold inline-block font-mono whitespace-nowrap px-2 py-1 rounded text-white bg-pink-500 rounded-2">bg-blend-saturation</div>
@@ -313,7 +314,7 @@ const MixingUtilities = () => {
                 <p className="my-8 border-b-2" >
                     If an element has a background image as well as a background color, you can use the background blend mode to control how the image blends with its background color.
                 </p>
-                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted" style="font-family: Raleway">
+                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
                     <li className="flex items-center space-between px-4 py-2">
                         <div className="w-3/4 bg-yellow-200 h-32 flex items-center">
                             <img className="mix-blend-normal h-32 w-full" src="http://pixelprowess.com/i/powship.svg" alt="POW Ship" />

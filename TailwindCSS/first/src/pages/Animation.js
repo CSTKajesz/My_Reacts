@@ -75,11 +75,11 @@ const Animation = () => {
                                         Filter
                                     </Link>
                                     <Link
-                                        to="#mixign"
+                                        to="#mixing"
                                         className={`hover:text-black ${active === 'mixign' && 'font-bold'}`}
                                         onClick={() => handleMenuItemClick('mixign')}
                                     >
-                                        Mixing Utilites
+                                        Mixing Utilities
                                     </Link>
 
                                 </aside>
