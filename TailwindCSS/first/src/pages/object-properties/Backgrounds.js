@@ -132,7 +132,7 @@ const Backgrounds = () => {
                     </tr>
                 </table>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-color'>
+                <Link to='https://tailwindcss.com/docs/background-color'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -204,7 +204,7 @@ const Backgrounds = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-opacity'>
+                <Link to='https://tailwindcss.com/docs/background-opacity'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -246,7 +246,7 @@ const Backgrounds = () => {
                         <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-2 rounded text-white bg-pink-500 rounded-2">bg-gradient-to-tl</div>
                     </li>
                 </ul>
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-image'>
+                <Link to='https://tailwindcss.com/docs/background-image'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -267,7 +267,7 @@ const Backgrounds = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#gradient-color-stops'>
+                <Link to='https://tailwindcss.com/docs/gradient-color-stops'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -291,7 +291,7 @@ const Backgrounds = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-size'>
+                <Link to='https://tailwindcss.com/docs/background-size'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Background Repeat </div>
@@ -326,7 +326,7 @@ const Backgrounds = () => {
                 </ul>
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-repeat'>
+                <Link to='https://tailwindcss.com/docs/background-repeat'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
@@ -376,7 +376,7 @@ const Backgrounds = () => {
 
 
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-position'>
+                <Link to='https://tailwindcss.com/docs/background-position'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8">Background Origin</div>
@@ -399,7 +399,7 @@ const Backgrounds = () => {
                     </li>
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#background-origin'>
+                <Link to='https://tailwindcss.com/docs/background-origin'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
                 <div className="text-2xl border-t-8 border-b-2 mt-20 mb-8" style={{ fontFamily: 'Raleway' }}>Box Decoration Break</div>
@@ -424,7 +424,7 @@ const Backgrounds = () => {
 
                 </ul>
 
-                <Link to='https://raybo.org/slides_tailwind/notes/slides/03_04/index.html#box-decoration-break'>
+                <Link to='https://tailwindcss.com/docs/box-decoration-break'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 

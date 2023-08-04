@@ -195,7 +195,7 @@ const Rings = () => {
                     </li>
                 </ul>
 
-                <Link to='https://tailwindcss.com/docs/ring-focus-variants'>
+                <Link to='https://tailwindcss.com/docs/ring-width#focus-rings'>
                     <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
                 </Link>
 
