@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import FormUtilities from './other-options/FormUtilities';
 import Tables from './other-options/Tables';
+import Svg from './other-options/Svg';
 
 
 
@@ -59,14 +60,14 @@ const OtherOptions = () => {
                                     >
                                         Tables
                                     </Link>
-                                    {/*<Link
-                                        to="#animation"
-                                        className={`hover:text-black ${active === 'animation' && 'font-bold'}`}
-                                        onClick={() => handleMenuItemClick('animation')}
-                                    >
-                                        Animations
-                                    </Link>
                                     <Link
+                                        to="#svg"
+                                        className={`hover:text-black ${active === 'svg' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('svg')}
+                                    >
+                                        SVG
+                                    </Link>
+                                    {/*<Link
                                         to="#filter"
                                         className={`hover:text-black ${active === 'filter' && 'font-bold'}`}
                                         onClick={() => handleMenuItemClick('filter')}
@@ -89,6 +90,7 @@ const OtherOptions = () => {
                 <div className="h-screen mt-[125px]">
                     {active === 'form' && <FormUtilities />}
                     {active === 'tables' && <Tables />}
+                    {active === 'svg' && <Svg />}
                     {/*{active === 'animation' && <Animations />}
                     {active === 'filter' && <Filters />}
                     {active === 'mixing' && <MixingUtilities />} */}
