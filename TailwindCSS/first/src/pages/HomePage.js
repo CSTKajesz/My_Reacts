@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import Welcome from './home/Welcome';
 import InstallCLI from './home/InstallCLI';
 import UsingPostCSS from './home/UsingPostCSS';
+import PlayCDN from './home/PlayCDN';
 
 const HomePage = () => {
     const [active, setActive] = useState('welcome');
@@ -66,6 +67,13 @@ const HomePage = () => {
                                     >
                                         Using Post CSS
                                     </Link>
+                                    <Link
+                                        to="#cdn"
+                                        className={`hover:text-black ${active === 'cdn' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('cdn')}
+                                    >
+                                        Play CDN
+                                    </Link>
 
                                 </aside>
                             </div>
@@ -76,6 +84,7 @@ const HomePage = () => {
                     {active === 'welcome' && <Welcome />}
                     {active === 'cli' && <InstallCLI />}
                     {active === 'post' && <UsingPostCSS />}
+                    {active === 'cdn' && <PlayCDN />}
 
                 </div>
             </main>
