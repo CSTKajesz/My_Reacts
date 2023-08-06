@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Welcome from './home/Welcome';
 import InstallCLI from './home/InstallCLI';
+import UsingPostCSS from './home/UsingPostCSS';
 
 const HomePage = () => {
     const [active, setActive] = useState('welcome');
@@ -58,6 +59,13 @@ const HomePage = () => {
                                     >
                                         Install with CLI
                                     </Link>
+                                    <Link
+                                        to="#post"
+                                        className={`hover:text-black ${active === 'post' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('post')}
+                                    >
+                                        Using Post CSS
+                                    </Link>
 
                                 </aside>
                             </div>
@@ -67,6 +75,7 @@ const HomePage = () => {
                 <div className="h-screen mt-[125px]">
                     {active === 'welcome' && <Welcome />}
                     {active === 'cli' && <InstallCLI />}
+                    {active === 'post' && <UsingPostCSS />}
 
                 </div>
             </main>
