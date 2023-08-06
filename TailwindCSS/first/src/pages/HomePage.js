@@ -1,55 +1,77 @@
-import { HashLink as Link } from 'react-router-hash-link';
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import Welcome from './home/Welcome';
+import InstallCLI from './home/InstallCLI';
 
 const HomePage = () => {
+    const [active, setActive] = useState('welcome');
+    const [originalUrl, setOriginalUrl] = useState('');
+    const location = useLocation();
+
+    const handleMenuItemClick = (menuId) => {
+        setActive(menuId);
+    };
+
+
+    useEffect(() => {
+        const { pathname } = location;
+        const hash = active !== 'welcome' ? `#${active}` : '';
+        const url = `${pathname}${hash}`;
+
+        if (!originalUrl) {
+            setOriginalUrl(url);
+        }
+
+        window.history.replaceState(null, null, url);
+    }, [active, location, originalUrl]);
+
+    useEffect(() => {
+        const { hash } = location;
+        const activeMenu = hash.slice(1);
+
+        if (activeMenu) {
+            setActive(activeMenu);
+        } else {
+            setActive('welcome');
+        }
+    }, [location]);
+
     return (
         <>
-            <section>
-                <div className="text-2xl border-t-8 border-b-2 mb-8">Get started with Tailwind CSS</div>
+            <main className="h-screen relative flex flex-row mt-[125px]">
+                <div className="max-w-[200px] mt-[125px] mr-[75px] h-screen text-left flex flex-col">
+                    <div className="w-full p-6 sm:w-60 bg-gray-200 text-indigo-500 sticky top-0">
+                        <nav className="space-y-8 text-sm">
+                            <div className="space-y-2">
+                                <aside className="flex flex-col space-y-1">
+                                    <Link
+                                        to="#welcome"
+                                        className={`hover:text-black ${active === 'welcome' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('welcome')}
+                                    >
+                                        Welcome
+                                    </Link>
+                                    <Link
+                                        to="#cli"
+                                        className={`hover:text-black ${active === 'cli' && 'font-bold'}`}
+                                        onClick={() => handleMenuItemClick('cli')}
+                                    >
+                                        Install with CLI
+                                    </Link>
 
-                <p className="my-8 border-b-2" >
-                    Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.
-                    It's fast, flexible, and reliable — with zero-runtime.
-                </p>
-                <ul className="container mx-auto divide-y divide-gray-400 divide-dotted">
-                    <li className="flex items-center justify-between px-4 py-2">
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">1</div>
-                        npm install -D tailwindcss
-                        <br />
-                        npx tailwindcss init
-                        <div className="select-auto text-md">Install tailwindcss via npm, and create your tailwind.config.js file.</div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">Install Tailwind CSS</div>
-                    </li>
-                    <li className="flex items-center justify-between px-4 py-2">
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">2</div>
-                        <div className="select-auto text-md">Add the paths to all of your template files in your tailwind.config.js file.</div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">Configure your template paths</div>
-                    </li>
-                    <li className="flex items-center justify-between px-4 py-2">
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">3</div>
-                        <div className="select-auto text-md">Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.</div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">Add the Tailwind directives to your CSS</div>
-                    </li>
-                    <li className="flex items-center justify-between px-4 py-2">
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">4</div>
-                        <div className="select-auto text-md">Run the CLI tool to scan your template files for classes and build your CSS.</div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">Start the Tailwind CLI build process</div>
-                    </li>
-                    <li className="flex items-center justify-between px-4 py-2">
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">5</div>
-                        <div className="select-auto text-md">Add your compiled CSS file to the head and start using <br />Tailwind’s utility classes to style your content.</div>
-                        <div className="text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-pink-500 rounded-2">Start using Tailwind in your HTML</div>
-                    </li>
+                                </aside>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div className="h-screen mt-[125px]">
+                    {active === 'welcome' && <Welcome />}
+                    {active === 'cli' && <InstallCLI />}
 
-                </ul>
-
-                <Link to='https://tailwindcss.com/docs/installation'>
-                    <button className='text-xs font-semibold font-mono whitespace-nowrap px-2 py-1 ml-5 rounded text-white bg-indigo-400 rounded-2 my-3'>Descriptions</button>
-                </Link>
-
-            </section >
-
+                </div>
+            </main>
         </>
-    )
-}
+    );
+};
 
 export default HomePage
