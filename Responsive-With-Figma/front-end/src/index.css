@@ -21,6 +21,7 @@ html {
 }
 
 .wrapper {
+    /*fix méretet adunk a desctopnak*/
     max-width: 1024px;
     margin: 0 auto;
 }
