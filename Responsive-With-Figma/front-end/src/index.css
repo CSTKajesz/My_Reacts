@@ -28,3 +28,46 @@ html {
 a {
     text-decoration: none;
 }
+
+/*Sections*/
+section {
+    padding: 80px 0;
+    color: #fff;
+}
+
+section h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: var(--clr-red);
+    left: 0;
+    bottom: -10px;
+}
+
+section h2.light::after {
+    background: var(--clr-yellow);
+}
+
+.black {
+    background: #000;
+}
+
+.dark-gray {
+    background: var(--clr-dark);
+}
+
+.pink {
+    background: var(--clr-pink);
+}
+
+section .content-container {
+    display: flex;
+}
